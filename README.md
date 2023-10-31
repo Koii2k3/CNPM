@@ -2,8 +2,9 @@
 Trước khi code/run dự án:
 1. Tải các package đi kèm theo link sau: https://drive.google.com/file/d/1l2_H20VA84YSh0EKC3rFGlQL6xiVt0Y5/view?usp=sharing
 2. Giải nén file vừa tải: được 1 folder "packages".
+![image](https://github.com/Koii2k3/CNPM/assets/125398356/ff918a0b-c2e4-4127-926b-3e6cfccc85cc)
 3. COPY folder này để tí PASTE.
-4. Mở Visual Studio, mở source dự án đã clone.
+4. Mở Visual Studio, mở source dự án đã clone/download.
 5. Nhấn vào đây:
 ![image](https://github.com/Koii2k3/CNPM/assets/125398356/3868f74d-9388-4b7f-b345-db5db92965f3)
 6. Double click vào đây:
