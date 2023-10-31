@@ -1905,10 +1905,10 @@
             this.pages.Location = new System.Drawing.Point(288, 108);
             this.pages.Multiline = true;
             this.pages.Name = "pages";
-            this.pages.Page = this.page_requestmanagement;
-            this.pages.PageIndex = 8;
-            this.pages.PageName = "page_requestmanagement";
-            this.pages.PageTitle = "Request Management";
+            this.pages.Page = this.page_resetpassword;
+            this.pages.PageIndex = 14;
+            this.pages.PageName = "page_resetpassword";
+            this.pages.PageTitle = "Reset Password";
             this.pages.SelectedIndex = 0;
             this.pages.Size = new System.Drawing.Size(1616, 933);
             this.pages.TabIndex = 2;
@@ -2753,6 +2753,10 @@
             // MP_dataGridView_task
             // 
             this.MP_dataGridView_task.AllowCustomTheming = false;
+            this.MP_dataGridView_task.AllowUserToAddRows = false;
+            this.MP_dataGridView_task.AllowUserToDeleteRows = false;
+            this.MP_dataGridView_task.AllowUserToOrderColumns = true;
+            this.MP_dataGridView_task.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.MP_dataGridView_task.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -2837,6 +2841,10 @@
             // MP_dataGridView_myJProject
             // 
             this.MP_dataGridView_myJProject.AllowCustomTheming = false;
+            this.MP_dataGridView_myJProject.AllowUserToAddRows = false;
+            this.MP_dataGridView_myJProject.AllowUserToDeleteRows = false;
+            this.MP_dataGridView_myJProject.AllowUserToOrderColumns = true;
+            this.MP_dataGridView_myJProject.AllowUserToResizeRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.MP_dataGridView_myJProject.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
@@ -3495,6 +3503,8 @@
             this.SR_dataGridView_myReq.AllowCustomTheming = false;
             this.SR_dataGridView_myReq.AllowUserToAddRows = false;
             this.SR_dataGridView_myReq.AllowUserToDeleteRows = false;
+            this.SR_dataGridView_myReq.AllowUserToOrderColumns = true;
+            this.SR_dataGridView_myReq.AllowUserToResizeRows = false;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
             this.SR_dataGridView_myReq.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
@@ -5336,6 +5346,7 @@
             this.SM_dataGridView_user.AllowCustomTheming = false;
             this.SM_dataGridView_user.AllowUserToAddRows = false;
             this.SM_dataGridView_user.AllowUserToDeleteRows = false;
+            this.SM_dataGridView_user.AllowUserToResizeRows = false;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
             this.SM_dataGridView_user.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
@@ -6598,6 +6609,7 @@
             this.RM_dataGridView_req.AllowCustomTheming = false;
             this.RM_dataGridView_req.AllowUserToAddRows = false;
             this.RM_dataGridView_req.AllowUserToDeleteRows = false;
+            this.RM_dataGridView_req.AllowUserToResizeRows = false;
             dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
             this.RM_dataGridView_req.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
@@ -6662,6 +6674,7 @@
             this.RM_dataGridView_files.AllowCustomTheming = false;
             this.RM_dataGridView_files.AllowUserToAddRows = false;
             this.RM_dataGridView_files.AllowUserToDeleteRows = false;
+            this.RM_dataGridView_files.AllowUserToResizeRows = false;
             dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
             this.RM_dataGridView_files.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
@@ -9693,6 +9706,7 @@
             this.PM_dataGridView_task.AllowUserToAddRows = false;
             this.PM_dataGridView_task.AllowUserToDeleteRows = false;
             this.PM_dataGridView_task.AllowUserToOrderColumns = true;
+            this.PM_dataGridView_task.AllowUserToResizeRows = false;
             dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
             this.PM_dataGridView_task.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
@@ -9797,6 +9811,7 @@
             this.PM_dataGridView_project.AllowUserToAddRows = false;
             this.PM_dataGridView_project.AllowUserToDeleteRows = false;
             this.PM_dataGridView_project.AllowUserToOrderColumns = true;
+            this.PM_dataGridView_project.AllowUserToResizeRows = false;
             dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
             this.PM_dataGridView_project.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
@@ -10556,6 +10571,7 @@
             this.AM_dataGridView_mInProject.AllowUserToAddRows = false;
             this.AM_dataGridView_mInProject.AllowUserToDeleteRows = false;
             this.AM_dataGridView_mInProject.AllowUserToOrderColumns = true;
+            this.AM_dataGridView_mInProject.AllowUserToResizeRows = false;
             dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
             this.AM_dataGridView_mInProject.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
@@ -10687,6 +10703,7 @@
             this.AM_dataGridView_user.AllowUserToAddRows = false;
             this.AM_dataGridView_user.AllowUserToDeleteRows = false;
             this.AM_dataGridView_user.AllowUserToOrderColumns = true;
+            this.AM_dataGridView_user.AllowUserToResizeRows = false;
             dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Black;
             this.AM_dataGridView_user.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
