@@ -881,6 +881,7 @@
             this.btn_projectmanagement.TextMarginLeft = 0;
             this.btn_projectmanagement.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_projectmanagement.UseDefaultRadiusAndThickness = true;
+            this.btn_projectmanagement.Visible = false;
             this.btn_projectmanagement.Click += new System.EventHandler(this.btn_projectmanagement_Click);
             // 
             // btn_addproject
@@ -971,6 +972,7 @@
             this.btn_addproject.TextMarginLeft = 0;
             this.btn_addproject.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_addproject.UseDefaultRadiusAndThickness = true;
+            this.btn_addproject.Visible = false;
             this.btn_addproject.Click += new System.EventHandler(this.btn_project_Click);
             // 
             // btn_myproject
@@ -1061,6 +1063,7 @@
             this.btn_myproject.TextMarginLeft = 0;
             this.btn_myproject.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_myproject.UseDefaultRadiusAndThickness = true;
+            this.btn_myproject.Visible = false;
             this.btn_myproject.Click += new System.EventHandler(this.btn_myproject_Click);
             // 
             // btn_task
@@ -1151,6 +1154,7 @@
             this.btn_task.TextMarginLeft = 0;
             this.btn_task.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_task.UseDefaultRadiusAndThickness = true;
+            this.btn_task.Visible = false;
             this.btn_task.Click += new System.EventHandler(this.btn_task_Click);
             // 
             // btn_worklog
@@ -1241,6 +1245,7 @@
             this.btn_worklog.TextMarginLeft = 0;
             this.btn_worklog.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_worklog.UseDefaultRadiusAndThickness = true;
+            this.btn_worklog.Visible = false;
             this.btn_worklog.Click += new System.EventHandler(this.btn_worklog_Click);
             // 
             // btn_performance
@@ -1331,6 +1336,7 @@
             this.btn_performance.TextMarginLeft = 0;
             this.btn_performance.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_performance.UseDefaultRadiusAndThickness = true;
+            this.btn_performance.Visible = false;
             this.btn_performance.Click += new System.EventHandler(this.btn_performance_Click);
             // 
             // btn_request
@@ -1421,6 +1427,7 @@
             this.btn_request.TextMarginLeft = 0;
             this.btn_request.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_request.UseDefaultRadiusAndThickness = true;
+            this.btn_request.Visible = false;
             this.btn_request.Click += new System.EventHandler(this.btn_request_Click);
             // 
             // btn_staffmanagement
@@ -1511,6 +1518,7 @@
             this.btn_staffmanagement.TextMarginLeft = 0;
             this.btn_staffmanagement.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_staffmanagement.UseDefaultRadiusAndThickness = true;
+            this.btn_staffmanagement.Visible = false;
             this.btn_staffmanagement.Click += new System.EventHandler(this.btn_staffmanagement_Click);
             // 
             // btn_addstaff
@@ -1601,6 +1609,7 @@
             this.btn_addstaff.TextMarginLeft = 0;
             this.btn_addstaff.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_addstaff.UseDefaultRadiusAndThickness = true;
+            this.btn_addstaff.Visible = false;
             this.btn_addstaff.Click += new System.EventHandler(this.btn_addstaff_Click);
             // 
             // btn_requestmanagement
@@ -1691,6 +1700,7 @@
             this.btn_requestmanagement.TextMarginLeft = 0;
             this.btn_requestmanagement.TextPadding = new System.Windows.Forms.Padding(55, 0, 0, 0);
             this.btn_requestmanagement.UseDefaultRadiusAndThickness = true;
+            this.btn_requestmanagement.Visible = false;
             this.btn_requestmanagement.Click += new System.EventHandler(this.btn_requestmanagement_Click);
             // 
             // btn_setting

@@ -38,16 +38,23 @@ namespace CNPM_ver3
         {
             //PC
             if (Users.LV_NAME == "Nhân viên")
-            {
-
+            {                 
+                btn_myproject.Visible = true;
+                btn_task.Visible = true;
+                btn_worklog.Visible = true;
+                btn_performance.Visible = true;
+                btn_request.Visible = true;
             }
             else if (Users.LV_NAME == "Quản lý nhân sự")
             {
+                btn_staffmanagement.Visible = true;
+                btn_addstaff.Visible = true;
                 btn_projectmanagement.Visible = true;
                 btn_requestmanagement.Visible = true;
             }
             else if (Users.LV_NAME == "Quản lý dự án")
             {
+                btn_addproject.Visible = true;
                 btn_myproject.Visible = true;
                 btn_projectmanagement.Visible = true;
                 btn_requestmanagement.Visible = true;
@@ -67,6 +74,7 @@ namespace CNPM_ver3
             }
             PM_showPj();
         }
+
 
         private void btn_project_Click(object sender, EventArgs e)
         {
