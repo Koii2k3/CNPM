@@ -254,15 +254,6 @@ namespace CNPM_ver3.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forget password.
-        /// </summary>
-        internal static string get_password {
-            get {
-                return ResourceManager.GetString("get_password", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap hide {

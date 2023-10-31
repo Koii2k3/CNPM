@@ -20,37 +20,14 @@ namespace CNPM_ver3
     {
         //PM 
         int control_hover = -1;
-        ProjectBLL pj = new ProjectBLL();
-        TaskBLL task = new TaskBLL();
-        //OverwriteForm ovf = new OverwriteForm();
-        string curr_pj_id = null;
-
-        //MP
-        UserBLL ul = new UserBLL();
-        //ProjectBLL pj = new ProjectBLL();
-        //TaskBLL task = new TaskBLL();
-        //string curr_pj_id = null;
-
-        //AP
-        //ProjectBLL pj = new ProjectBLL();
-
-        //AT
-        //UserBLL ul = new UserBLL();
-        //string cur_pj_id;
-        //TaskBLL task = new TaskBLL();
-
-        //AM 
-        //UserBLL ul = new UserBLL();
-        //string cur_pj_id;
-        //ProjectBLL pj = new ProjectBLL();
-
-        //SM
-        //UserBLL ul = new UserBLL();
-        //OverwriteForm ovf = new OverwriteForm();
-        string curr_pk = "";
         int flag = 0;
-        RequestBLL reqBll = new RequestBLL();
+        string curr_pj_id = null;
+        string curr_pk = "";
         List<string> files = new List<string>();
+        UserBLL ul = new UserBLL();
+        TaskBLL task = new TaskBLL();
+        ProjectBLL pj = new ProjectBLL();
+        RequestBLL reqBll = new RequestBLL();
 
         public PageControl()
         {
@@ -67,13 +44,13 @@ namespace CNPM_ver3
             else if (Users.LV_NAME == "Quản lý nhân sự")
             {
                 btn_projectmanagement.Visible = true;
-                btn_requests.Visible = true;
+                btn_requestmanagement.Visible = true;
             }
             else if (Users.LV_NAME == "Quản lý dự án")
             {
                 btn_myproject.Visible = true;
                 btn_projectmanagement.Visible = true;
-                btn_requests.Visible = true;
+                btn_requestmanagement.Visible = true;
             }
 
             try
@@ -89,14 +66,6 @@ namespace CNPM_ver3
                 MessageBox.Show(ex.Message);
             }
             PM_showPj();
-
-            //MP
-            //MP_showPj();
-            //MP_showAllTask();
-
-            //AP
-            
-
         }
 
         private void btn_project_Click(object sender, EventArgs e)
@@ -157,11 +126,6 @@ namespace CNPM_ver3
             pages.SetPage(7);
         }
 
-        private void btn_requests_Click(object sender, EventArgs e)
-        {
-            pages.SetPage(8);
-        }
-
         private void btn_profile_Click(object sender, EventArgs e)
         {
             try
@@ -213,6 +177,11 @@ namespace CNPM_ver3
             this.Hide();
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
+        }
+        private void btn_requestmanagement_Click(object sender, EventArgs e)
+        {
+            RM_showTable();
+            pages.SetPage(8);
         }
 
         //PM functions
@@ -648,7 +617,6 @@ namespace CNPM_ver3
         {
             pages.SetPage(14);
         }
-
 
         //RP
         private void RP_btResetPass_Click(object sender, EventArgs e)
@@ -1100,6 +1068,7 @@ namespace CNPM_ver3
             }
         }
 
+        //SR
         private void SR_btn_clear_Click(object sender, EventArgs e)
         {
             SR_textBox_subject.Clear();
@@ -1111,9 +1080,9 @@ namespace CNPM_ver3
 
         private void SR_bt_Request_Click(object sender, EventArgs e)
         {
-            string subject = textBox_subject.Text;
-            string pk_receiver = textBox_toUser.Text;
-            string content = textBox_content.Text;
+            string subject = SR_textBox_subject.Text;
+            string pk_receiver = SR_textBox_toUser.Text;
+            string content = SR_textBox_content.Text;
             string pk_sender = Users.PK;
             if (reqBll.AddRequest(subject, content, pk_sender, pk_receiver, files))
             {
@@ -1142,7 +1111,7 @@ namespace CNPM_ver3
             }
         }
 
-        public void showTable()
+        public void SR_showTable()
         {
             SR_dataGridView_myReq.ReadOnly = true;
             SR_dataGridView_myReq.DataSource = reqBll.GetMyRequest(Users.PK);
@@ -1152,6 +1121,116 @@ namespace CNPM_ver3
         {
             files.Clear();
             SR_comboBox_files.Items.Clear();
+        }
+
+        // RM
+        private bool VerifySelectedReq()
+        {
+            if (string.IsNullOrEmpty(RM_textBox_sender.Text) || string.IsNullOrEmpty(RM_textBox_subject.Text))
+            {
+                MessageBox.Show("Please, select a specific request", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        public void RM_showTable()
+        {
+            //RM_dataGridView_req.ReadOnly = true;
+            RM_dataGridView_req.DataSource = reqBll.GetRequestReceiver(Users.PK);
+        }
+
+        private void RM_button_accept_Click(object sender, EventArgs e)
+        {
+            if (VerifySelectedReq())
+            {
+
+                if (RM_textBox_status.Text.Equals("Chưa xử lí"))
+                {
+                    reqBll.UpdateRequestStatus(RM_textBox_sender.Text, Users.PK, "Đã xử lí");
+                    MessageBox.Show("Accept request successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Request has already processed", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void RM_button_reject_Click(object sender, EventArgs e)
+        {
+            if (VerifySelectedReq())
+            {
+                if (RM_textBox_status.Text.Equals("Chưa xử lí"))
+                {
+                    reqBll.UpdateRequestStatus(RM_textBox_sender.Text, Users.PK, "Từ chối xử lí");
+                    MessageBox.Show("Reject request successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Request has already processed", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void RM_dataGridView_req_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string req_id = RM_dataGridView_req.CurrentRow.Cells["R_ID"].Value.ToString();
+            RM_textBox_sender.Text = RM_dataGridView_req.CurrentRow.Cells["SENDER_ID"].Value.ToString();
+            RM_textBox_subject.Text = RM_dataGridView_req.CurrentRow.Cells["R_DES"].Value.ToString();
+            RM_textBox_content.Text = RM_dataGridView_req.CurrentRow.Cells["R_CONTENT"].Value.ToString();
+            RM_textBox_status.Text = RM_dataGridView_req.CurrentRow.Cells["R_STATUS"].Value.ToString();
+            RM_dateTimePicker_sentDay.Value = (DateTime)RM_dataGridView_req.CurrentRow.Cells["R_DATE"].Value;
+
+            RM_dataGridView_files.ReadOnly = true;
+            RM_dataGridView_files.DataSource = reqBll.GetFileFromRequest(req_id);
+            RM_dataGridView_files.Columns["F_FILE"].Visible = false;
+            RM_dataGridView_files.Columns["F_ID"].Visible = false;
+            RM_dataGridView_files.Columns["R_ID"].Visible = false;
+        }
+
+        private void RM_dataGridView_files_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (VerifySelectedReq())
+            {
+                string filename = RM_dataGridView_files.CurrentRow.Cells["F_NAME"].Value.ToString();
+                using (SaveFileDialog sfd = new SaveFileDialog())
+                {
+                    sfd.Filter = "Text documents (.pdf)|*.pdf|JPEG Image (.jpeg)|*.jpeg|Png Image (.png)|*.png";
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        DialogResult dialog = MessageBox.Show("Are you sure you want to download this file", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                        // Default filename
+                        //sfd.FileName = filename;
+
+
+                        if (dialog == DialogResult.Yes)
+                        {
+                            filename = sfd.FileName;
+                            try
+                            {
+                                byte[] fileData = (byte[])RM_dataGridView_files.CurrentRow.Cells["F_FILE"].Value;
+                                using (FileStream fs = new FileStream(filename, FileMode.Create, FileAccess.ReadWrite))
+                                {
+                                    using (BinaryWriter bw = new BinaryWriter(fs))
+                                    {
+                                        bw.Write(fileData);
+                                        bw.Close();
+                                    }
+                                }
+                                MessageBox.Show("Saved file in " + filename);
+                            }
+                            catch
+                            {
+                                MessageBox.Show("File is not found ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
