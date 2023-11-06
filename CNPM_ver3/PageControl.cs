@@ -36,6 +36,11 @@ namespace CNPM_ver3
 
         private void PageControl_Load(object sender, EventArgs e)
         {
+            //FE
+            MP_button_allTask.FlatAppearance.MouseOverBackColor = Color.FromArgb(240, 246, 255);
+            MP_button_allTask.FlatAppearance.MouseDownBackColor = Color.FromArgb(240, 246, 255);
+            MP_button_allTask.FlatAppearance.BorderSize = 0;
+
             //PC
             if (Users.LV_NAME == "Nhân viên")
             {                 
@@ -44,6 +49,7 @@ namespace CNPM_ver3
                 btn_worklog.Visible = true;
                 btn_performance.Visible = true;
                 btn_request.Visible = true;
+                btn_myproject_Click(sender, e);
             }
             else if (Users.LV_NAME == "Quản lý nhân sự")
             {
@@ -51,6 +57,12 @@ namespace CNPM_ver3
                 btn_addstaff.Visible = true;
                 btn_projectmanagement.Visible = true;
                 btn_requestmanagement.Visible = true;
+                btn_staffmanagement_Click(sender, e);
+                PM_btn_addtask.Visible = true;
+                PM_btn_addgr.Visible = true;
+                PM_btn_delete.Visible = true;
+                PM_btn_addmem.Visible = true;
+                PM_btn_update.Visible = true;
             }
             else if (Users.LV_NAME == "Quản lý dự án")
             {
@@ -58,6 +70,7 @@ namespace CNPM_ver3
                 btn_myproject.Visible = true;
                 btn_projectmanagement.Visible = true;
                 btn_requestmanagement.Visible = true;
+                btn_projectmanagement_Click(sender, e);
             }
 
             try
@@ -72,9 +85,8 @@ namespace CNPM_ver3
             {
                 MessageBox.Show(ex.Message);
             }
-            PM_showPj();
+            //PM_showPj();
         }
-
 
         private void btn_project_Click(object sender, EventArgs e)
         {
@@ -452,7 +464,7 @@ namespace CNPM_ver3
                 }
                 else
                 {
-                    MessageBox.Show("Validate failure", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Validate failure 1", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
@@ -470,7 +482,7 @@ namespace CNPM_ver3
                 }
                 else
                 {
-                    MessageBox.Show("Validate failure", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Validate failure 2", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -871,6 +883,7 @@ namespace CNPM_ver3
                 SM_btDisableList.Text = "Disabled user list";
                 SM_btDisable.Text = "Disable";
                 SM_button_update.Visible = true;
+
                 return;
 
             }
@@ -1005,6 +1018,10 @@ namespace CNPM_ver3
                 {
                     MessageBox.Show("Fail to add new user", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+            else
+            {
+                MessageBox.Show("Fail to fill information new user", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -1159,6 +1176,7 @@ namespace CNPM_ver3
                 {
                     reqBll.UpdateRequestStatus(RM_textBox_sender.Text, Users.PK, "Đã xử lí");
                     MessageBox.Show("Accept request successfully");
+                    RM_showTable();
                 }
                 else
                 {
