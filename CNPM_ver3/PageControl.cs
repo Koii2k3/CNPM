@@ -85,7 +85,6 @@ namespace CNPM_ver3
             {
                 MessageBox.Show(ex.Message);
             }
-            //PM_showPj();
         }
 
         private void btn_project_Click(object sender, EventArgs e)
@@ -189,6 +188,7 @@ namespace CNPM_ver3
 
         private void btn_projectmanagement_Click(object sender, EventArgs e)
         {
+            PM_showPj();
             pages.SetPage(11);
         }
 
@@ -205,6 +205,11 @@ namespace CNPM_ver3
         }
 
         //PM functions
+        private void PM_txt_search_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                PM_btn_search_Click(sender, e);
+        }
         private void PM_chb_setdl_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
         {
             if (PM_chb_setdl.Checked)
@@ -398,6 +403,11 @@ namespace CNPM_ver3
         }
 
         //MP functions
+        private void MP_textBox_search_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                MP_button_search_Click(sender, e);
+        }
         public void MP_showPj()
         {
             //MP_dataGridView_myJProject.ReadOnly = true;
@@ -450,12 +460,20 @@ namespace CNPM_ver3
                 DateTime start = AP_dateTimePicker_start.Value;
                 DateTime end = AP_dateTimePicker_end.Value;
                 DateTime exp = AP_dateTimePicker_exp.Value;
-                if (ValidateChildren(ValidationConstraints.Enabled) && pj.ValidateDeadline(start, end, exp))
+                if (pj.ValidateDeadline(start, end, exp))
+                {
+                    MessageBox.Show("ok");
+                }
+
+                if (pj.ValidateDeadline(start, end, exp))
                 {
 
                     if (pj.InsertPJ(name, desc, exp, start, end, ver, isPublic, pk))
                     {
                         MessageBox.Show(Properties.Resources.add_pj_success, Properties.Resources.title_success, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        AP_textBox_name.Text = "";
+                        AP_textBox_desc.Text = "";
+                        AP_comboBox_public.Text = "";
                     }
                     else
                     {
@@ -464,26 +482,29 @@ namespace CNPM_ver3
                 }
                 else
                 {
-                    MessageBox.Show("Validate failure 1", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Validate Set Deadline ", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                if (ValidateChildren(ValidationConstraints.Enabled))
-                {
+                //if (ValidateChildren(ValidationConstraints.Enabled))
+                //{
                     if (pj.InsertPJ(name, desc, null, null, null, ver, isPublic, pk))
                     {
                         MessageBox.Show(Properties.Resources.add_pj_success, Properties.Resources.title_success, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        AP_textBox_name.Text = "";
+                        AP_textBox_desc.Text = "";
+                        AP_comboBox_public.Text = "";
                     }
                     else
                     {
                         MessageBox.Show(Properties.Resources.add_pj_fail, Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Validate failure 2", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Validate failure 2", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //}
             }
         }
 
@@ -973,8 +994,10 @@ namespace CNPM_ver3
         {
             Users.SPU = true;
             Users.CSU = curr_pk;
-            ManageProjectForm manageProjectForm = new ManageProjectForm();
-            manageProjectForm.Show();
+            pages.SetPage(11);
+            PM_showPj();
+            //ManageProjectForm manageProjectForm = new ManageProjectForm();
+            //manageProjectForm.Show();
         }
 
         //AS
@@ -1008,8 +1031,8 @@ namespace CNPM_ver3
             MemoryStream ms = new MemoryStream();
             AS_pictureBox_user.Image.Save(ms, AS_pictureBox_user.Image.RawFormat);
             image = ms.ToArray();
-            if (ValidateChildren(ValidationConstraints.Enabled))
-            {
+            //if (ValidateChildren(ValidationConstraints.Enabled))
+            //{
                 if (ul.insertUser(type, username, birthdate, address, cccd, image, email, gender, dp, lv, phone))
                 {
                     MessageBox.Show("New User Added", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1018,11 +1041,11 @@ namespace CNPM_ver3
                 {
                     MessageBox.Show("Fail to add new user", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
-            else
-            {
-                MessageBox.Show("Fail to fill information new user", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Fail to fill information new user", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
 
         private void AS_button_upload_Click(object sender, EventArgs e)
@@ -1258,5 +1281,7 @@ namespace CNPM_ver3
                 }
             }
         }
+
+        
     }
 }

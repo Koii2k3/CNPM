@@ -306,6 +306,16 @@ namespace CNPM_ver3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap landing_page {
+            get {
+                object obj = ResourceManager.GetObject("landing-page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_e1645110820608_1024x102411 {
             get {
                 object obj = ResourceManager.GetObject("Login-e1645110820608-1024x102411", resourceCulture);
