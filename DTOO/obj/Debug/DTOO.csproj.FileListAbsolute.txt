@@ -1,6 +1,0 @@
-D:\WinForm1\DTOO\bin\Debug\DTOO.dll
-D:\WinForm1\DTOO\bin\Debug\DTOO.pdb
-D:\WinForm1\DTOO\obj\Debug\DTOO.csproj.AssemblyReference.cache
-D:\WinForm1\DTOO\obj\Debug\DTOO.csproj.CoreCompileInputs.cache
-D:\WinForm1\DTOO\obj\Debug\DTOO.dll
-D:\WinForm1\DTOO\obj\Debug\DTOO.pdb
