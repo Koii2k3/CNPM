@@ -61,8 +61,24 @@ namespace CNPM_ver3
                 {
                     MessageBox.Show(Properties.Resources.login_success, Properties.Resources.login_success_title);
                     this.Hide();
-                    PageControl pageControl = new PageControl();
-                    pageControl.Show();
+                    if (Users.LV_NAME == "Quản lý nhân sự")
+                    {
+                        PageControl pageControl = new PageControl();
+                        pageControl.Show();
+                        PageControlHR p = new PageControlHR();
+                        p.Show();
+                    }
+                    if (Users.LV_NAME == "Quản lý dự án")
+                    {
+                        PageControlPM p = new PageControlPM();
+                        p.Show();
+
+                    }
+                    if (Users.LV_NAME == "Nhân viên")
+                    {
+                        PageControlStaff p = new PageControlStaff();
+                        p.Show();
+                    }
                     //UserHomeForm infoForm = new UserHomeForm();
                     //infoForm.Show();
                 }

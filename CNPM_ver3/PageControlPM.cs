@@ -16,25 +16,25 @@ using static System.Net.WebRequestMethods;
 
 namespace CNPM_ver3
 {
-    public partial class PageControl : Form
+    public partial class PageControlPM : Form
     {
         //PM 
-        int control_hover = -1;
-        int flag = 0;
+        //int control_hover = -1;
+        //int flag = 0;
         string curr_pj_id = null;
-        string curr_pk = "";
+        //string curr_pk = "";
         List<string> files = new List<string>();
         UserBLL ul = new UserBLL();
         TaskBLL task = new TaskBLL();
         ProjectBLL pj = new ProjectBLL();
         RequestBLL reqBll = new RequestBLL();
 
-        public PageControl()
+        public PageControlPM()
         {
             InitializeComponent();
         }
 
-        private void PageControl_Load(object sender, EventArgs e)
+        private void PageControlPM_Load(object sender, EventArgs e)
         {
             //FE
             MP_button_allTask.FlatAppearance.MouseOverBackColor = Color.FromArgb(240, 246, 255);
@@ -42,36 +42,7 @@ namespace CNPM_ver3
             MP_button_allTask.FlatAppearance.BorderSize = 0;
 
             //PC
-            if (Users.LV_NAME == "Nhân viên")
-            {                 
-                btn_myproject.Visible = true;
-                btn_task.Visible = true;
-                btn_worklog.Visible = true;
-                btn_performance.Visible = true;
-                btn_request.Visible = true;
-                btn_myproject_Click(sender, e);
-            }
-            else if (Users.LV_NAME == "Quản lý nhân sự")
-            {
-                btn_staffmanagement.Visible = true;
-                btn_addstaff.Visible = true;
-                btn_projectmanagement.Visible = true;
-                btn_requestmanagement.Visible = true;
-                btn_staffmanagement_Click(sender, e);
-                PM_btn_addtask.Visible = true;
-                PM_btn_addgr.Visible = true;
-                PM_btn_delete.Visible = true;
-                PM_btn_addmem.Visible = true;
-                PM_btn_update.Visible = true;
-            }
-            else if (Users.LV_NAME == "Quản lý dự án")
-            {
-                btn_addproject.Visible = true;
-                btn_myproject.Visible = true;
-                btn_projectmanagement.Visible = true;
-                btn_requestmanagement.Visible = true;
-                btn_projectmanagement_Click(sender, e);
-            }
+            btn_projectmanagement_Click(sender, e);
 
             try
             {
@@ -113,13 +84,6 @@ namespace CNPM_ver3
             pages.SetPage(5);
         }
 
-        private void btn_staffmanagement_Click(object sender, EventArgs e)
-        {
-            Users.SPU = false;
-            SM_loadTable();
-            pages.SetPage(6);
-        }
-
         private void btn_addstaff_Click(object sender, EventArgs e)
         {
             TypeBLL tl = new TypeBLL();
@@ -142,7 +106,7 @@ namespace CNPM_ver3
             {
                 AS_comboBox_dp.Items.Add(t);
             }
-            pages.SetPage(7);
+            pages.SetPage(6);
         }
 
         private void btn_profile_Click(object sender, EventArgs e)
@@ -171,12 +135,12 @@ namespace CNPM_ver3
             {
                 MessageBox.Show(ex.Message);
             }
-            pages.SetPage(9);
+            pages.SetPage(8);
         }
 
         private void btn_setting_Click(object sender, EventArgs e)
         {
-            pages.SetPage(10);
+            pages.SetPage(9);
         }
 
         private void btn_myproject_Click(object sender, EventArgs e)
@@ -189,7 +153,7 @@ namespace CNPM_ver3
         private void btn_projectmanagement_Click(object sender, EventArgs e)
         {
             PM_showPj();
-            pages.SetPage(11);
+            pages.SetPage(10);
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -201,7 +165,7 @@ namespace CNPM_ver3
         private void btn_requestmanagement_Click(object sender, EventArgs e)
         {
             RM_showTable();
-            pages.SetPage(8);
+            pages.SetPage(7);
         }
 
         //PM functions
@@ -722,282 +686,6 @@ namespace CNPM_ver3
             RP_tCurrPass.Text = "";
             RP_tNewPass1.Text = "";
             RP_tNewPass2.Text = "";
-        }
-
-        //SM
-        public void SM_loadTable()
-        {
-            TypeBLL tl = new TypeBLL();
-            string[] types = tl.getUserType();
-            foreach (string t in types)
-            {
-                SM_comboBox_type.Items.Add(t);
-            }
-
-            LevelBLL lv = new LevelBLL();
-            string[] levels = lv.GetUserLevel();
-            foreach (string t in levels)
-            {
-                SM_comboBox_lv.Items.Add(t);
-            }
-
-            DepartmentBLL dp = new DepartmentBLL();
-            string[] dps = dp.GetUserDP();
-            foreach (string t in dps)
-            {
-                SM_comboBox_dp.Items.Add(t);
-            }
-            SM_showTable();
-        }
-
-        public void SM_showTable()
-        {
-            SM_dataGridView_user.ReadOnly = true;
-            SM_dataGridView_user.DataSource = ul.getUserInfoAll();
-            SM_dataGridView_user.RowTemplate.Height = 80;
-
-            // Show image
-            DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            imageColumn = (DataGridViewImageColumn)SM_dataGridView_user.Columns["USER_IMAGE"];
-            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
-        }
-
-        private void SM_button_update_Click(object sender, EventArgs e)
-        {
-            string u_name = SM_textBox_username.Text;
-            DateTime bd = SM_dateTimePicker_birthdate.Value;
-            string cccd = SM_textBox_cccd.Text;
-            string addr = SM_textBox_addr.Text;
-            string gd = SM_comboBox_gender.Text;
-            string email = SM_textBox_email.Text;
-            string vt_name = SM_comboBox_type.Text;
-            string u_pass = SM_textBox_pass.Text;
-            string lv_name = SM_comboBox_lv.Text;
-            string dp_name = SM_comboBox_dp.Text;
-            string u_phone = SM_textBox_phone.Text;
-
-            MemoryStream ms = new MemoryStream();
-            SM_pictureBox_user.Image.Save(ms, SM_pictureBox_user.Image.RawFormat);
-            byte[] img = ms.ToArray();
-            if (ul.UpdateUserInfo(curr_pk, u_name, bd, cccd, addr, gd, email, vt_name, u_pass, lv_name, dp_name, u_phone, img))
-            {
-                MessageBox.Show("Update user information successfully");
-                SM_loadTable();
-            }
-            else
-            {
-                MessageBox.Show("Fail to update user information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void SM_button_upload_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Select Photo(*.jpg;*.png;*.gif) | *.jpg;*.png;*.gif";
-            if (ofd.ShowDialog() == DialogResult.OK)
-                SM_pictureBox_user.Image = Image.FromFile(ofd.FileName);
-        }
-
-        private void SM_btDisable_Click(object sender, EventArgs e)
-        {
-            if (curr_pk.Equals("")) return;
-            if (curr_pk.Equals(Users.PK))
-            {
-                MessageBox.Show("Cannot disable yourself", "Error Disable User", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (flag == 0)
-            {
-                if (MessageBox.Show("Do you want to disable this user?", "Disable User", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    int res = ul.disableUser(curr_pk, flag);
-                    if (res == 1)
-                    {
-                        MessageBox.Show("This user has been disabled", "Sucessfully Disable User", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        SM_loadTable();
-
-                    }
-                }
-                return;
-            }
-
-            if (flag == 1)
-            {
-                if (MessageBox.Show("Do you want to enable this user?", "Enable User", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    int res = ul.disableUser(curr_pk, flag);
-                    if (res == 1)
-                    {
-                        MessageBox.Show("This user has been enabled", "Sucessfully Enable User", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        SM_loadTableDis();
-                    }
-                }
-                return;
-            }
-        }
-
-        // function loadTableDisable 
-        // copy from function loadTable above
-
-        public void SM_loadTableDis()
-        {
-            TypeBLL tl = new TypeBLL();
-            string[] types = tl.getUserType();
-            foreach (string t in types)
-            {
-                SM_comboBox_type.Items.Add(t);
-            }
-
-            LevelBLL lv = new LevelBLL();
-            string[] levels = lv.GetUserLevel();
-            foreach (string t in levels)
-            {
-                SM_comboBox_lv.Items.Add(t);
-            }
-
-            DepartmentBLL dp = new DepartmentBLL();
-            string[] dps = dp.GetUserDP();
-            foreach (string t in dps)
-            {
-                SM_comboBox_dp.Items.Add(t);
-            }
-            SM_showTableDis();
-        }
-
-        // function showTableDisable
-        // copy from function showTable above
-
-        public void SM_showTableDis()
-        {
-            SM_dataGridView_user.ReadOnly = true;
-            SM_dataGridView_user.DataSource = ul.getUserInfoDis();
-            SM_dataGridView_user.RowTemplate.Height = 80;
-
-            try
-            {
-                // Show image
-                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-                imageColumn = (DataGridViewImageColumn)SM_dataGridView_user.Columns[7];
-                imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            }
-            catch { }
-        }
-
-        // function to switch between disable and enable list
-        private void SM_btDisableList_Click(object sender, EventArgs e)
-        {
-            if (flag == 0)
-            {
-                SM_loadTableDis();
-                flag = 1;
-                SM_btDisableList.Text = "Return management form";
-                SM_btDisable.Text = "Enable";
-                SM_button_update.Visible = false;
-                return;
-            }
-
-            if (flag == 1)
-            {
-                SM_loadTable();
-                flag = 0;
-                SM_btDisableList.Text = "Disabled user list";
-                SM_btDisable.Text = "Disable";
-                SM_button_update.Visible = true;
-
-                return;
-
-            }
-        }
-
-        private void SM_dataGridView_user_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            curr_pk = SM_dataGridView_user.CurrentRow.Cells["USER_ID"].Value.ToString();
-            SM_textBox_username.Text = SM_dataGridView_user.CurrentRow.Cells["USER_NAME"].Value.ToString();
-            SM_dateTimePicker_birthdate.Value = (DateTime)SM_dataGridView_user.CurrentRow.Cells["USER_BIRTH"].Value;
-            SM_textBox_email.Text = SM_dataGridView_user.CurrentRow.Cells["USER_EMAIL"].Value.ToString();
-            SM_textBox_cccd.Text = SM_dataGridView_user.CurrentRow.Cells["USER_CCCD"].Value.ToString();
-
-            try
-            {
-                byte[] img = (byte[])SM_dataGridView_user.CurrentRow.Cells["USER_IMAGE"].Value;
-                MemoryStream ms = new MemoryStream(img);
-                SM_pictureBox_user.Image = Image.FromStream(ms);
-            }
-            catch
-            {
-
-            }
-            SM_comboBox_gender.Text = SM_dataGridView_user.CurrentRow.Cells["USER_GENDER"].Value.ToString();
-            SM_comboBox_enable.Text = SM_dataGridView_user.CurrentRow.Cells["U_EN"].Value.ToString();
-            SM_textBox_pass.Text = SM_dataGridView_user.CurrentRow.Cells["U_PASS"].Value.ToString();
-            SM_comboBox_type.Text = SM_dataGridView_user.CurrentRow.Cells["VT_NAME"].Value.ToString();
-            SM_comboBox_lv.Text = SM_dataGridView_user.CurrentRow.Cells["LV_NAME"].Value.ToString();
-            SM_comboBox_dp.Text = SM_dataGridView_user.CurrentRow.Cells["PB_NAME"].Value.ToString();
-            SM_textBox_addr.Text = SM_dataGridView_user.CurrentRow.Cells["USER_ADDRESS"].Value.ToString();
-            SM_textBox_phone.Text = SM_dataGridView_user.CurrentRow.Cells["USER_PHONE"].Value.ToString();
-        }
-
-        private void SM_button_search_user_Click(object sender, EventArgs e)
-        {
-            String description = SM_tb_search_user.Text;
-            if (description.Equals(""))
-            {
-                SM_loadTable();
-                return;
-            }
-            SM_loadTableSearch(description);
-        }
-
-        public void SM_loadTableSearch(string description)
-        {
-            TypeBLL tl = new TypeBLL();
-            string[] types = tl.getUserType();
-            foreach (string t in types)
-            {
-                SM_comboBox_type.Items.Add(t);
-            }
-
-            LevelBLL lv = new LevelBLL();
-            string[] levels = lv.GetUserLevel();
-            foreach (string t in levels)
-            {
-                SM_comboBox_lv.Items.Add(t);
-            }
-
-            DepartmentBLL dp = new DepartmentBLL();
-            string[] dps = dp.GetUserDP();
-            foreach (string t in dps)
-            {
-                SM_comboBox_dp.Items.Add(t);
-            }
-            SM_showTableSearch(description);
-        }
-
-        public void SM_showTableSearch(string description)
-        {
-            SM_dataGridView_user.ReadOnly = true;
-            SM_dataGridView_user.DataSource = ul.getUserFromSearch(description);
-            SM_dataGridView_user.RowTemplate.Height = 80;
-
-            try
-            {
-                // Show image
-                DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-                imageColumn = (DataGridViewImageColumn)SM_dataGridView_user.Columns[7];
-                imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            }
-            catch { }
-        }
-
-        private void SM_button_see_project_Click(object sender, EventArgs e)
-        {
-            Users.SPU = true;
-            Users.CSU = curr_pk;
-            pages.SetPage(11);
-            PM_showPj();
-            //ManageProjectForm manageProjectForm = new ManageProjectForm();
-            //manageProjectForm.Show();
         }
 
         //AS
