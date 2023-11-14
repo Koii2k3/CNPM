@@ -12,40 +12,14 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Net.WebRequestMethods;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CNPM_ver3
 {
-    public partial class PageControl : Form
+    public partial class PageControlHR : Form
     {
-
-
-
-        /*private Size oldSize;
-
-        protected override void OnResize(System.EventArgs e)
-        {
-            base.OnResize(e);
-
-            foreach (Control cnt in this.Controls)
-                ResizeAll(cnt, base.Size);
-
-            oldSize = base.Size;
-        }
-        private void ResizeAll(Control control, Size newSize)
-        {
-            int width = newSize.Width - oldSize.Width;
-            control.Left += (control.Left * width) / oldSize.Width;
-            control.Width += (control.Width * width) / oldSize.Width;
-
-            int height = newSize.Height - oldSize.Height;
-            control.Top += (control.Top * height) / oldSize.Height;
-            control.Height += (control.Height * height) / oldSize.Height;
-        }*/
-
-            
         //PM 
-        int control_hover = -1;
+        int percentage = 0;
         int flag = 0;
         string curr_pj_id = null;
         string curr_pk = "";
@@ -54,56 +28,19 @@ namespace CNPM_ver3
         TaskBLL task = new TaskBLL();
         ProjectBLL pj = new ProjectBLL();
         RequestBLL reqBll = new RequestBLL();
+        BackgroundWorker bgWorker = new BackgroundWorker();
 
-        public PageControl()
+        public PageControlHR()
         {
             InitializeComponent();
+            bgWorker.WorkerReportsProgress = true;
+            bgWorker.DoWork += new DoWorkEventHandler(bgWorker_DoWork);
+            bgWorker.ProgressChanged += new ProgressChangedEventHandler(bgWorker_ProgressChanged);
         }
 
-        private void PageControl_Load(object sender, EventArgs e)
+        private void PageControlHR_Load(object sender, EventArgs e)
         {
-
-            //oldSize = base.Size;
-            int h = Screen.PrimaryScreen.WorkingArea.Height;
-            int w = Screen.PrimaryScreen.WorkingArea.Width;
-            this.ClientSize = new Size(w, h);
-
-            //FE
-            MP_button_allTask.FlatAppearance.MouseOverBackColor = Color.FromArgb(240, 246, 255);
-            MP_button_allTask.FlatAppearance.MouseDownBackColor = Color.FromArgb(240, 246, 255);
-            MP_button_allTask.FlatAppearance.BorderSize = 0;
-
-            //PC
-            if (Users.LV_NAME == "Nhân viên")
-            {                 
-                btn_myproject.Visible = true;
-                btn_task.Visible = true;
-                btn_worklog.Visible = true;
-                btn_performance.Visible = true;
-                btn_request.Visible = true;
-                btn_myproject_Click(sender, e);
-            }
-            else if (Users.LV_NAME == "Quản lý nhân sự")
-            {
-                btn_staffmanagement.Visible = true;
-                btn_addstaff.Visible = true;
-                btn_projectmanagement.Visible = true;
-                btn_requestmanagement.Visible = true;
-                btn_staffmanagement_Click(sender, e);
-                PM_btn_addtask.Visible = true;
-                PM_btn_addgr.Visible = true;
-                PM_btn_delete.Visible = true;
-                PM_btn_addmem.Visible = true;
-                PM_btn_update.Visible = true;
-            }
-            else if (Users.LV_NAME == "Quản lý dự án")
-            {
-                btn_addproject.Visible = true;
-                btn_myproject.Visible = true;
-                btn_projectmanagement.Visible = true;
-                btn_requestmanagement.Visible = true;
-                btn_projectmanagement_Click(sender, e);
-            }
+            bgWorker.RunWorkerAsync();
 
             try
             {
@@ -119,37 +56,36 @@ namespace CNPM_ver3
             }
         }
 
-        private void btn_project_Click(object sender, EventArgs e)
+        private void PageControlHR_Shown(object sender, EventArgs e)
+        {
+            //bgWorker.RunWorkerAsync();
+        }
+
+        private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            load_page_HR(sender, e);
+        }
+        private void bgWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            bunifuProgressBar1.TransitionValue(e.ProgressPercentage, 500);
+        }
+
+        private void load_page_HR(object sender, EventArgs e)
         {
             pages.SetPage(0);
-            PM_showPj();
-        }
-
-        private void btn_task_Click(object sender, EventArgs e)
-        {
-            pages.SetPage(2);
-        }
-
-        private void btn_worklog_Click(object sender, EventArgs e)
-        {
-            pages.SetPage(3);
-        }
-
-        private void btn_performance_Click(object sender, EventArgs e)
-        {
-            pages.SetPage(4);
-        }
-
-        private void btn_request_Click(object sender, EventArgs e)
-        {
-            pages.SetPage(5);
+            Users.SPU = false;
+            SM_loadTable();
         }
 
         private void btn_staffmanagement_Click(object sender, EventArgs e)
         {
+            pages.SetPage(0);
             Users.SPU = false;
-            SM_loadTable();
-            pages.SetPage(6);
+            //percentage = 0;
+            //SM_loadTable();
+            if (bgWorker.IsBusy == false) {
+                bgWorker.RunWorkerAsync();
+            }
         }
 
         private void btn_addstaff_Click(object sender, EventArgs e)
@@ -174,7 +110,7 @@ namespace CNPM_ver3
             {
                 AS_comboBox_dp.Items.Add(t);
             }
-            pages.SetPage(7);
+            pages.SetPage(2);
         }
 
         private void btn_profile_Click(object sender, EventArgs e)
@@ -203,37 +139,30 @@ namespace CNPM_ver3
             {
                 MessageBox.Show(ex.Message);
             }
-            pages.SetPage(9);
+            pages.SetPage(4);
         }
 
         private void btn_setting_Click(object sender, EventArgs e)
         {
-            pages.SetPage(10);
-        }
-
-        private void btn_myproject_Click(object sender, EventArgs e)
-        {
-            pages.SetPage(1);
-            MP_showPj();
-            MP_showAllTask();
+            pages.SetPage(5);
         }
 
         private void btn_projectmanagement_Click(object sender, EventArgs e)
         {
             PM_showPj();
-            pages.SetPage(11);
+            pages.SetPage(1);
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
         }
         private void btn_requestmanagement_Click(object sender, EventArgs e)
         {
             RM_showTable();
-            pages.SetPage(8);
+            pages.SetPage(3);
         }
 
         //PM functions
@@ -302,8 +231,6 @@ namespace CNPM_ver3
 
         public void PM_showPj()
         {
-            //PM_dataGridView_project.ReadOnly = true;
-
             if (Users.SPU == true)
             {
                 PM_dataGridView_project.DataSource = pj.getProjectOfUser(Users.CSU);
@@ -314,67 +241,9 @@ namespace CNPM_ver3
                 PM_dataGridView_project.DataSource = pj.GetProjectInfoAllOfMan(Users.PK);
             }
         }
-        private void PM_btn_update_Click(object sender, EventArgs e)
-        {
-            errorProvider1.Clear();
-            errorProvider2.Clear();
-            errorProvider3.Clear();
-
-            if (curr_pj_id != null)
-            {
-                string pj_name = PM_txt_proname.Text;
-                string desc = PM_txt_prodes.Text;
-                string isPublic = PM_cb_proscale.Text;
-                string ver = PM_txt_prover.Text;
-                DateTime? exp = null;
-                DateTime? start = null;
-                DateTime? end = null;
-
-                // Validate date
-                if (PM_dp_start.Format == DateTimePickerFormat.Long)
-                {
-                    exp = PM_dp_expect.Value;
-                    start = PM_dp_start.Value;
-                    end = PM_dp_dl.Value;
-                }
-
-                if (exp != null && start != null && end != null && !pj.ValidateDeadline((DateTime)start, (DateTime)end, (DateTime)exp))
-                {
-                    errorProvider1.SetError(PM_dp_start, "Invalid deadline");
-                    errorProvider2.SetError(PM_dp_expect, "Invalid deadline");
-                    errorProvider3.SetError(PM_dp_dl, "Invalid deadline");
-                    return;
-                }
-                else
-                {
-                    if (pj.UpdateProject(curr_pj_id, pj_name, desc, exp, start, end, ver, isPublic, Users.PK))
-                    {
-                        MessageBox.Show("Update project information successfully");
-
-                        PM_txt_proname.Clear();
-                        PM_txt_prodes.Clear();
-                        PM_cb_proscale.Text = string.Empty;
-                        PM_txt_prover.Clear();
-                        curr_pj_id = null;
-
-                        PM_showPj();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Fail to update project information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-
-            }
-            else
-            {
-                MessageBox.Show("Choose a project", "Project", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         public void PM_showTask()
         {
-            //dataGridView_task.ReadOnly = true;
             PM_dataGridView_task.DataSource = task.GetTaskOfProject(curr_pj_id);
         }
 
@@ -404,204 +273,12 @@ namespace CNPM_ver3
         {
             PM_dp_dl.Format = DateTimePickerFormat.Long;
         }
-        private void PM_btn_addtask_Click(object sender, EventArgs e)
-        {
-            if (curr_pj_id != null)
-            {
-                AT_dateTimePicker_start.Value = DateTime.Today.AddDays(-1);
-                AT_dateTimePicker_end.Value = DateTime.Today.AddDays(-1);
-                AT_dateTimePicker_exp.Value = DateTime.Today.AddDays(-1);
-                AT_textBox_name.Text = String.Empty;
-                AT_textBox_desc.Text = String.Empty;
-                pages.SetPage(12);
-            }
-            else
-            {
-                MessageBox.Show("Choose a project", "Project", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void PM_btn_addmem_Click(object sender, EventArgs e)
-        {
-            AM_showTableOutPj();
-            AM_showTableInPj();
-            pages.SetPage(13);
-        }
         //*
-        private void dataGridView_task_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView_task_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             string task_id = PM_dataGridView_task.CurrentRow.Cells["J_ID"].Value.ToString();
             AddUser2Task au2t = new AddUser2Task(curr_pj_id, task_id);
             au2t.Show();
-        }
-
-        //MP functions
-        private void MP_textBox_search_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-                MP_button_search_Click(sender, e);
-        }
-        public void MP_showPj()
-        {
-            //MP_dataGridView_myJProject.ReadOnly = true;
-            MP_dataGridView_myJProject.DataSource = ul.GetAllProjectOfUser(Users.PK);
-        }
-        public void MP_showAllTask()
-        {
-            //MP_dataGridView_task.ReadOnly = true;
-            MP_dataGridView_task.DataSource = task.GetAllTaskOfUser(Users.PK);
-        }
-        public void MP_showTaskPj()
-        {
-            //dataGridView_task.ReadOnly = true;
-            MP_dataGridView_task.DataSource = task.GetJobInProjectOfUser(Users.PK, curr_pj_id);
-        }
-        private void MP_button_search_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrEmpty(MP_textBox_search.Text))
-            {
-                MP_dataGridView_myJProject.DataSource = pj.SearchProjectU(Users.PK, MP_textBox_search.Text);
-            }
-            else
-            {
-                MessageBox.Show("Search without any hint error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        //*
-        private void MP_button_allTask_Click(object sender, EventArgs e)
-        {
-            MP_showAllTask();
-        }
-        private void MP_dataGridView_myJProject_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //MP_dataGridView_task.ReadOnly = true;
-            curr_pj_id = MP_dataGridView_myJProject.CurrentRow.Cells["PJ_ID"].Value.ToString();
-            MP_showTaskPj();
-        }
-
-        //AP functions
-        private void AP_button_addProject_Click(object sender, EventArgs e)
-        {
-            string name = AP_textBox_name.Text;
-            string ver = "1";
-            string desc = AP_textBox_desc.Text;
-            string isPublic = AP_comboBox_public.Text;
-            string pk = Users.PK;
-
-            if (AP_checkBox_dl.Checked)
-            {
-                DateTime start = AP_dateTimePicker_start.Value;
-                DateTime end = AP_dateTimePicker_end.Value;
-                DateTime exp = AP_dateTimePicker_exp.Value;
-                if (pj.ValidateDeadline(start, end, exp))
-                {
-                    MessageBox.Show("ok");
-                }
-
-                if (pj.ValidateDeadline(start, end, exp))
-                {
-
-                    if (pj.InsertPJ(name, desc, exp, start, end, ver, isPublic, pk))
-                    {
-                        MessageBox.Show(Properties.Resources.add_pj_success, Properties.Resources.title_success, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        AP_textBox_name.Text = "";
-                        AP_textBox_desc.Text = "";
-                        AP_comboBox_public.Text = "";
-                    }
-                    else
-                    {
-                        MessageBox.Show(Properties.Resources.add_pj_fail, Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Validate Set Deadline ", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            else
-            {
-                //if (ValidateChildren(ValidationConstraints.Enabled))
-                //{
-                    if (pj.InsertPJ(name, desc, null, null, null, ver, isPublic, pk))
-                    {
-                        MessageBox.Show(Properties.Resources.add_pj_success, Properties.Resources.title_success, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        AP_textBox_name.Text = "";
-                        AP_textBox_desc.Text = "";
-                        AP_comboBox_public.Text = "";
-                    }
-                    else
-                    {
-                        MessageBox.Show(Properties.Resources.add_pj_fail, Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Validate failure 2", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //}
-            }
-        }
-
-        private void AP_textBox_name_Validating(object sender, CancelEventArgs e)
-        {
-            errorProvider1.Clear();
-            if (string.IsNullOrEmpty(AP_textBox_name.Text))
-            {
-                e.Cancel = true;
-                AP_textBox_name.Focus();
-                errorProvider1.SetError(AP_textBox_name, "Please enter project name");
-            }
-        }
-
-        private void AP_checkBox_dl_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
-        {
-            if (!AP_checkBox_dl.Checked)
-            {
-                AP_pn_dl.Enabled = false;
-                AP_dateTimePicker_start.CustomFormat = " ";
-                AP_dateTimePicker_start.Format = DateTimePickerFormat.Custom;
-                AP_dateTimePicker_end.CustomFormat = " ";
-                AP_dateTimePicker_end.Format = DateTimePickerFormat.Custom;
-                AP_dateTimePicker_exp.CustomFormat = " ";
-                AP_dateTimePicker_exp.Format = DateTimePickerFormat.Custom;
-            }
-            else
-            {
-                AP_pn_dl.Enabled = true;
-                AP_dateTimePicker_start.Format = DateTimePickerFormat.Long;
-                AP_dateTimePicker_end.Format = DateTimePickerFormat.Long;
-                AP_dateTimePicker_exp.Format = DateTimePickerFormat.Long;
-            }
-        }
-
-        //AT
-        private void AT_button_add_Click(object sender, EventArgs e)
-        {
-            string name = AT_textBox_name.Text;
-            string desc = AT_textBox_desc.Text;
-
-            DateTime start = AT_dateTimePicker_start.Value;
-            DateTime end = AT_dateTimePicker_end.Value;
-            DateTime exp = AT_dateTimePicker_exp.Value;
-
-            if (task.InsertTask(name, desc, exp, start, end, "0", "New task", curr_pj_id))
-            {
-                MessageBox.Show("Add task successfully", Properties.Resources.title_success, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                AT_dateTimePicker_start.Value = DateTime.Today.AddDays(-1);
-                AT_dateTimePicker_end.Value = DateTime.Today.AddDays(-1);
-                AT_dateTimePicker_exp.Value = DateTime.Today.AddDays(-1);
-                AT_textBox_name.Text = String.Empty;
-                AT_textBox_desc.Text = String.Empty;
-                PM_showTask();
-                pages.SetPage(11);
-            }
-            else
-            {
-                MessageBox.Show("Fail to add task", Properties.Resources.title_fail, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void AT_button_close_Click(object sender, EventArgs e)
-        {
-            pages.SetPage(11);
         }
 
         //AM 
@@ -615,14 +292,6 @@ namespace CNPM_ver3
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
             imageColumn = (DataGridViewImageColumn)AM_dataGridView_user.Columns["USER_IMAGE"];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
-
-            /*DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-            btn.HeaderText = "Add member";
-            btn.Name = "button_add";
-            btn.Text = "Add";
-            btn.UseColumnTextForButtonValue = true;
-            btn.DefaultCellStyle.BackColor = Color.FromArgb(187, 37, 37);
-            dataGridView_user.Columns.Add(btn);*/
         }
 
         public void AM_showTableInPj()
@@ -680,15 +349,15 @@ namespace CNPM_ver3
             }
         }
 
-        private void AM_btn_close_Click_1(object sender, EventArgs e)
+        private void AM_btn_close_Click(object sender, EventArgs e)
         {
-            pages.SetPage(11);
+            pages.SetPage(1);
         }
 
         //PF
         private void PF_button_changePass_Click(object sender, EventArgs e)
         {
-            pages.SetPage(14);
+            pages.SetPage(7);
         }
 
         //RP
@@ -750,7 +419,7 @@ namespace CNPM_ver3
 
         private void RP_btn_close_Click(object sender, EventArgs e)
         {
-            pages.SetPage(9);
+            pages.SetPage(4);
             RP_tCurrPass.Text = "";
             RP_tNewPass1.Text = "";
             RP_tNewPass2.Text = "";
@@ -763,35 +432,63 @@ namespace CNPM_ver3
             string[] types = tl.getUserType();
             foreach (string t in types)
             {
-                SM_comboBox_type.Items.Add(t);
+                SM_comboBox_type.Invoke((Action)delegate
+                {
+                    SM_comboBox_type.Items.Add(t);
+                });
             }
+
+            percentage = 20;
+            bgWorker.ReportProgress(percentage);
 
             LevelBLL lv = new LevelBLL();
             string[] levels = lv.GetUserLevel();
             foreach (string t in levels)
             {
-                SM_comboBox_lv.Items.Add(t);
+                SM_comboBox_lv.Invoke((Action)delegate
+                 {
+                     SM_comboBox_lv.Items.Add(t);
+                 });
             }
+
+            percentage = 40;
+            bgWorker.ReportProgress(percentage);
 
             DepartmentBLL dp = new DepartmentBLL();
             string[] dps = dp.GetUserDP();
             foreach (string t in dps)
             {
-                SM_comboBox_dp.Items.Add(t);
+                SM_comboBox_dp.Invoke((Action)delegate
+                {
+                    SM_comboBox_dp.Items.Add(t);
+                });
             }
+
+            percentage = 60;
+            bgWorker.ReportProgress(percentage);
+
             SM_showTable();
         }
 
         public void SM_showTable()
         {
             SM_dataGridView_user.ReadOnly = true;
-            SM_dataGridView_user.DataSource = ul.getUserInfoAll();
+            SM_dataGridView_user.Invoke((Action)delegate
+            {
+                SM_dataGridView_user.DataSource = ul.getUserInfoAll();
+            });
             SM_dataGridView_user.RowTemplate.Height = 80;
+
+            percentage = 80;
+            bgWorker.ReportProgress(percentage);
 
             // Show image
             DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
             imageColumn = (DataGridViewImageColumn)SM_dataGridView_user.Columns["USER_IMAGE"];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+
+            percentage = 100;
+            bgWorker.ReportProgress(percentage);
         }
 
         private void SM_button_update_Click(object sender, EventArgs e)
@@ -869,9 +566,6 @@ namespace CNPM_ver3
             }
         }
 
-        // function loadTableDisable 
-        // copy from function loadTable above
-
         public void SM_loadTableDis()
         {
             TypeBLL tl = new TypeBLL();
@@ -896,9 +590,6 @@ namespace CNPM_ver3
             }
             SM_showTableDis();
         }
-
-        // function showTableDisable
-        // copy from function showTable above
 
         public void SM_showTableDis()
         {
@@ -1065,14 +756,14 @@ namespace CNPM_ver3
             image = ms.ToArray();
             //if (ValidateChildren(ValidationConstraints.Enabled))
             //{
-                if (ul.insertUser(type, username, birthdate, address, cccd, image, email, gender, dp, lv, phone))
-                {
-                    MessageBox.Show("New User Added", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Fail to add new user", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            if (ul.insertUser(type, username, birthdate, address, cccd, image, email, gender, dp, lv, phone))
+            {
+                MessageBox.Show("New User Added", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Fail to add new user", "Add User", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             //}
             //else
             //{
@@ -1091,30 +782,25 @@ namespace CNPM_ver3
 
         private void AS_textBox_username_Validating(object sender, CancelEventArgs e)
         {
-            errorProvider1.Clear();
             if (string.IsNullOrEmpty(AS_textBox_username.Text) || !AS_textBox_username.Text.All(c => Char.IsLetter(c) || c == ' '))
             {
                 e.Cancel = true;
                 AS_textBox_username.Focus();
-                errorProvider1.SetError(AS_textBox_username, "Invalid username");
             }
         }
 
         private void AS_textBox_phone_Validating(object sender, CancelEventArgs e)
         {
-            errorProvider2.Clear();
             Regex r = new Regex(@"^[0-9]{10}$");
             if (!r.IsMatch(AS_textBox_phone.Text))
             {
                 e.Cancel = true;
                 AS_textBox_phone.Focus();
-                errorProvider2.SetError(AS_textBox_phone, "Phone number must contain 10 digits");
             }
         }
 
         private void AS_dateTimePicker_birthdate_Validating(object sender, CancelEventArgs e)
         {
-            errorProvider3.Clear();
             DateTime birthdate = AS_dateTimePicker_birthdate.Value;
             DateTime now = DateTime.Now;
             TimeSpan date_num = now - birthdate;
@@ -1122,85 +808,25 @@ namespace CNPM_ver3
             if (day_age < 6570)
             {
                 e.Cancel = true;
-                errorProvider3.SetError(AS_dateTimePicker_birthdate, "Account is only for the age of 18 or up");
             }
         }
 
         private void AS_textBox_email_Validating(object sender, CancelEventArgs e)
         {
-            errorProvider4.Clear();
             if (!IsValidEmail(AS_textBox_email.Text))
             {
                 e.Cancel = true;
                 AS_textBox_email.Focus();
-                errorProvider4.SetError(AS_textBox_email, "Email address is invalid");
             }
         }
 
         private void AS_textBox_cccd_Validating(object sender, CancelEventArgs e)
         {
-            errorProvider5.Clear();
             if (!AS_textBox_cccd.Text.All(char.IsDigit) || AS_textBox_cccd.Text.Length < 9)
             {
                 e.Cancel = true;
                 AS_textBox_cccd.Focus();
-                errorProvider5.SetError(AS_textBox_cccd, "Identification number must contain above 8 digits");
             }
-        }
-
-        //SR
-        private void SR_btn_clear_Click(object sender, EventArgs e)
-        {
-            SR_textBox_subject.Clear();
-            SR_textBox_toUser.Clear();
-            SR_textBox_content.Clear();
-            files.Clear();
-            SR_comboBox_files.Items.Clear();
-        }
-
-        private void SR_bt_Request_Click(object sender, EventArgs e)
-        {
-            string subject = SR_textBox_subject.Text;
-            string pk_receiver = SR_textBox_toUser.Text;
-            string content = SR_textBox_content.Text;
-            string pk_sender = Users.PK;
-            if (reqBll.AddRequest(subject, content, pk_sender, pk_receiver, files))
-            {
-                MessageBox.Show("Request successfully", "Add Request", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Fail to request", "Add Request", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void SR_button_file_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Multiselect = true;
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                foreach (string file in openFileDialog.FileNames)
-                {
-                    string file_name = System.IO.Path.GetFileName(file);
-                    SR_comboBox_files.Items.Add(file_name);
-
-                    files.Add(file);
-                }
-                MessageBox.Show("Uploaded " + files.Count + " successfully");
-            }
-        }
-
-        public void SR_showTable()
-        {
-            SR_dataGridView_myReq.ReadOnly = true;
-            SR_dataGridView_myReq.DataSource = reqBll.GetMyRequest(Users.PK);
-        }
-
-        private void SR_button_clearFiles_Click(object sender, EventArgs e)
-        {
-            files.Clear();
-            SR_comboBox_files.Items.Clear();
         }
 
         // RM
@@ -1312,6 +938,13 @@ namespace CNPM_ver3
                     }
                 }
             }
+        }
+
+        private void bunifuProgressBar1_ProgressChanged(object sender, Bunifu.UI.WinForms.BunifuProgressBar.ProgressChangedEventArgs e)
+        {
+
+
+
         }
     }
 }

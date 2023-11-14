@@ -195,6 +195,18 @@
     <Compile Include="ForgetPassForm2.Designer.cs">
       <DependentUpon>ForgetPassForm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="PageControlStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageControlStaff.Designer.cs">
+      <DependentUpon>PageControlStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageControlPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageControlPM.Designer.cs">
+      <DependentUpon>PageControlPM.cs</DependentUpon>
+    </Compile>
     <Compile Include="PageControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +244,12 @@
       <DependentUpon>ManageRequestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="OverwriteForm.cs" />
+    <Compile Include="PageControlHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageControlHR.Designer.cs">
+      <DependentUpon>PageControlHR.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,8 +349,17 @@
     <EmbeddedResource Include="ManageRequestForm.resx">
       <DependentUpon>ManageRequestForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PageControlStaff.resx">
+      <DependentUpon>PageControlStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageControlPM.resx">
+      <DependentUpon>PageControlPM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PageControl.resx">
       <DependentUpon>PageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageControlHR.resx">
+      <DependentUpon>PageControlHR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileForm.resx">
       <DependentUpon>ProfileForm.cs</DependentUpon>

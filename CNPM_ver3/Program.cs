@@ -18,7 +18,8 @@ namespace CNPM_ver3
         {
             var language = ConfigurationManager.AppSettings["language"];
 
-            //PT_40393_HR 40393 QLNS
+            //
+            //40393 QLNS
             //IN_50821_IT 50821 Staff
             //FT_77945_IT test QLDA
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
