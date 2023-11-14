@@ -63,8 +63,6 @@ namespace CNPM_ver3
                     this.Hide();
                     PageControl pageControl = new PageControl();
                     pageControl.Show();
-                    //UserHomeForm infoForm = new UserHomeForm();
-                    //infoForm.Show();
                 }
                 else
                 {

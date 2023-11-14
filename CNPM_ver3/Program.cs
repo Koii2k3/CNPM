@@ -26,8 +26,10 @@ namespace CNPM_ver3
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new AssignTaskForm("BE94AF37AD", "Task 28 - 3", "96418"));
             //Application.Run(new PageControl());
-            Application.Run(new LoginForm());
+            Application.Run(new StatisticTaskPerUserInPJ("BE94AF37AD"));
+            //Application.Run(new RequestForm());
 
             //Application.Run(new AddUserForm());
         }

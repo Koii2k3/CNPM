@@ -104,8 +104,11 @@ namespace CNPM_ver3
 
         private void button_clearFiles_Click(object sender, EventArgs e)
         {
-            files.Clear();
-            comboBox_files.Items.Clear();
+            if (files.Count > 0)
+            {
+                files.RemoveAt(files.Count - 1);
+                comboBox_files.Items.RemoveAt(comboBox_files.Items.Count - 1);
+            }
         }
 
         private void dataGridView_myReq_CellContentClick(object sender, DataGridViewCellEventArgs e)

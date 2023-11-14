@@ -1,9 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Ocsp;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
+using System.Runtime.Remoting.Contexts;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -105,6 +107,7 @@ namespace DALL
             }
         }
 
+
         public DataTable GetUserOfTask(string taskID)
         {
             String query = String.Format("call GET_USER_OF_JOB(@taskID)");
@@ -159,5 +162,83 @@ namespace DALL
                 return false;
             }
         }
+
+
+           
+
+
+        public void AddFileForTask(String taskID, String assigneeID, String file_name, byte[] file)
+        {
+            String query = String.Format("select ADD_JOB_RESOURCE_FILE(@taskID, @assigneeID, @file_name, @file) as Result");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@taskID", MySqlDbType.VarChar).Value = taskID;
+            command.Parameters.Add("@assigneeID", MySqlDbType.VarChar).Value = assigneeID;
+            command.Parameters.Add("@file_name", MySqlDbType.VarChar).Value = file_name;
+            command.Parameters.Add("@file", MySqlDbType.LongBlob).Value = file;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+        }
+
+        public void AddSubtask(String taskID, String subTaskName)
+        {
+            // Check subtask having same name in BLL later
+            String query = String.Format("select ADD_SUB_JOB(@taskID, @subTaskName)");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@taskID", MySqlDbType.VarChar).Value = taskID;
+            command.Parameters.Add("@subTaskName", MySqlDbType.VarChar).Value = subTaskName;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+        }
+
+
+        public String InsertTask1(String taskName, String taskDesc, DateTime start, DateTime end,
+                                int isHL, String taskState, String pjID)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT ADD_JOB_WITHOUT_FINISH_DAY (@name, @desc, @start, @end, @isHL, @status, @pjID) as Result", con);
+
+            command.Parameters.Add("@name", MySqlDbType.VarChar).Value = taskName;
+            command.Parameters.Add("@desc", MySqlDbType.VarChar).Value = taskDesc;
+            command.Parameters.Add("@start", MySqlDbType.Date).Value = start;
+            command.Parameters.Add("@end", MySqlDbType.Date).Value = end;
+            command.Parameters.Add("@isHL", MySqlDbType.Int32).Value = isHL;
+            command.Parameters.Add("@status", MySqlDbType.VarChar).Value = taskState;
+            command.Parameters.Add("@pjID", MySqlDbType.VarChar).Value = pjID;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+
+            adapter.Fill(table);
+
+            string taskID = "-1";
+            foreach (DataRow row in table.Rows)
+            {
+                taskID = row["Result"].ToString();
+            }
+            return taskID;
+        }
+
+        public DataTable GetTaskProcess(String jobID)
+        {
+            String query = String.Format("call GET_ONE_JOB_PROCESS(@jobID)");
+            MySqlCommand command = new MySqlCommand(query, con);
+            command.Parameters.Add("@jobID", MySqlDbType.VarChar).Value = jobID;
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+            {
+                return table;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
     }
 }

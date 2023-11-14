@@ -88,6 +88,10 @@ namespace CNPM_ver3
 
         private void DataGridView_Project_Click(object sender, EventArgs e)
         {
+            curr_pj_id = dataGridView_project.CurrentRow.Cells["PJ_ID"].Value.ToString();
+            ovf.openChildForm(new StatisticTaskPerUserInPJ(curr_pj_id), ref panel_main);
+
+            /*
             if (dataGridView_project.CurrentRow != null)
             {
                 curr_pj_id = dataGridView_project.CurrentRow.Cells["PJ_ID"].Value.ToString();
@@ -119,7 +123,7 @@ namespace CNPM_ver3
 
                 textBox_ver.Text = dataGridView_project.CurrentRow.Cells["PJ_VERSION"].Value.ToString();
                 showTask();
-            }
+            }*/
         }
 
         private void button_addMember_Click(object sender, EventArgs e)

@@ -16,3 +16,9 @@ C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DTOO\obj\Deb
 C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DTOO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DTOO\obj\Debug\DTOO.dll
 C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DTOO\obj\Debug\DTOO.pdb
+D:\WinForm\CNPM\DTOO\bin\Debug\DTOO.dll
+D:\WinForm\CNPM\DTOO\bin\Debug\DTOO.pdb
+D:\WinForm\CNPM\DTOO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\WinForm\CNPM\DTOO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\WinForm\CNPM\DTOO\obj\Debug\DTOO.dll
+D:\WinForm\CNPM\DTOO\obj\Debug\DTOO.pdb

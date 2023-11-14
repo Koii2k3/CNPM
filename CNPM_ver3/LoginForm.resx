@@ -126,10 +126,14 @@
     <value>Segoe UI, 9.75pt, style=Underline</value>
   </data>
   <data name="checkBox_remember.Location" type="System.Drawing.Point, System.Drawing">
-    <value>795, 392</value>
+    <value>1192, 603</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBox_remember.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="checkBox_remember.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 21</value>
+    <value>164, 32</value>
   </data>
   <data name="checkBox_remember.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -483,12 +487,14 @@
 </value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1147, 12</value>
+    <value>1720, 18</value>
+  </data>
+  <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 32</value>
+    <value>39, 49</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -3721,10 +3727,13 @@
 </value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 79</value>
+    <value>33, 122</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>764, 474</value>
+    <value>1146, 729</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -3745,10 +3754,13 @@
     <value>18</value>
   </data>
   <data name="button_addUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>964, 501</value>
+    <value>1446, 771</value>
+  </data>
+  <data name="button_addUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="button_addUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 42</value>
+    <value>220, 65</value>
   </data>
   <data name="button_addUser.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -3778,10 +3790,13 @@
     <value>Segoe UI Semibold, 9.75pt, style=Bold</value>
   </data>
   <data name="pro_name4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1039, 163</value>
+    <value>1558, 251</value>
+  </data>
+  <data name="pro_name4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pro_name4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 17</value>
+    <value>56, 28</value>
   </data>
   <data name="pro_name4.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -3811,13 +3826,13 @@
     <value>NoControl</value>
   </data>
   <data name="btForget.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 389</value>
+    <value>1490, 598</value>
   </data>
   <data name="btForget.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="btForget.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 24</value>
+    <value>189, 37</value>
   </data>
   <data name="btForget.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -3842,23 +3857,28 @@
   </data>
   <data name="button_login.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAT8AAAAsCAYAAAATk78qAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAExSURBVHhe7dgxSpxRFIbhW1q6BMuUrsTaJdhkLYGsIVtI
-        a5slWFuIYJAwgSjEwpwREZ18G5hvngNP8/7ntpfLv3bmfFyOn+MZoMD2PvsxLsZ/czy2HzcjHQbYd3/G
-        1TgZb7O9+NIyQJvrcTTW5/F7pCWANo/j6/DqAw7OzVgP7wLAoYgRoF2MAO1iBGgXI0C7GAHaxQjQLkaA
-        djECtIsRoF2MAO1iBGgXI0C7GAHaxQjQLkaAdjECtIsRoF2MAO1iBGgXI0C7GAHaxQjQLkaAdjECtIsR
-        oF2MAO1iBGgXI0C7GAHaxQjQLkaAdjECtFtPOwHgEKyrnQDQbjPWl+H1BxyS72MdjdvXANDu1zgZL3M6
-        7sbfkZYBGtyPs/Fhjse38TDSIYB9tf21dzk+jZm1/gGcR4N0aAILWAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAd4AAABECAYAAAAvFFRSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAGuSURBVHhe7dkxSp1RFIXRW1o6BMuUjiR1hmDjWAKOwSnY
+        2jqEV1tIwBCCggpJoecFCcnLbny4U60Dq/n+c+vL5V8782lcjq/jGQDY2/YuvRon4585HNuPdyMdBgD2
+        8zA242j8nu2lm5YBgPdxPQ7GOh33Iy0BAO/jaZwNr10A+E9uxnr8IwAAXTECAB0xAgAdMQIAHTECAB0x
+        AgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAdMQIAHTECAB0x
+        AgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAdMQIAHTECAB0x
+        AgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAdMQIAHTECAB0x
+        AgAdMQIAHTECAB0xAgAdMQIAHTECAB0xAgAd6+dOAAB61mYnAAAdd2N9Hl69ANB3MdbB+PIaAICO7+No
+        /JrjcTt+jLQMAOzv2/g4/prDcT4eRzoEALzN9lfu5fgwZtZ6AQT3Y4jZ2A2+AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="button_login.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 14.25pt, style=Bold</value>
   </data>
   <data name="button_login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>792, 440</value>
+    <value>1188, 677</value>
+  </data>
+  <data name="button_login.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="button_login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 44</value>
+    <value>478, 68</value>
   </data>
   <data name="button_login.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -3882,10 +3902,13 @@
     <value>Segoe UI, 9.75pt, style=Bold, Italic</value>
   </data>
   <data name="txt_namecomp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1082, 591</value>
+    <value>1623, 909</value>
+  </data>
+  <data name="txt_namecomp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="txt_namecomp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 17</value>
+    <value>156, 28</value>
   </data>
   <data name="txt_namecomp.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -3909,10 +3932,13 @@
     <value>True</value>
   </data>
   <data name="txt_infocomp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>885, 608</value>
+    <value>1328, 935</value>
+  </data>
+  <data name="txt_infocomp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="txt_infocomp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 65</value>
+    <value>429, 100</value>
   </data>
   <data name="txt_infocomp.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -3946,10 +3972,13 @@ E-mail: info@bcmpkorea.com</value>
     <value>Segoe UI, 20.25pt, style=Bold</value>
   </data>
   <data name="text_welcome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>788, 196</value>
+    <value>1182, 302</value>
+  </data>
+  <data name="text_welcome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="text_welcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 37</value>
+    <value>318, 55</value>
   </data>
   <data name="text_welcome.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -3976,10 +4005,13 @@ E-mail: info@bcmpkorea.com</value>
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="text_suggest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>792, 233</value>
+    <value>1188, 358</value>
+  </data>
+  <data name="text_suggest.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="text_suggest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 21</value>
+    <value>290, 32</value>
   </data>
   <data name="text_suggest.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -4003,13 +4035,13 @@ E-mail: info@bcmpkorea.com</value>
     <value>Flat</value>
   </data>
   <data name="button_show.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1069, 350</value>
+    <value>1604, 538</value>
   </data>
   <data name="button_show.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="button_show.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 27</value>
+    <value>52, 42</value>
   </data>
   <data name="button_show.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -4042,10 +4074,13 @@ E-mail: info@bcmpkorea.com</value>
     <value>English</value>
   </data>
   <data name="comboBox_language.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1007, 12</value>
+    <value>1510, 18</value>
+  </data>
+  <data name="comboBox_language.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="comboBox_language.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 32</value>
+    <value>199, 32</value>
   </data>
   <data name="comboBox_language.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -4067,23 +4102,28 @@ E-mail: info@bcmpkorea.com</value>
   </data>
   <data name="textBox_userid.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAT8AAAAuCAYAAABeWx4hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABYSURBVHhe7cMBDQAwCAOw+zfFnAE2HtqkDwAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+lqR2q96ZHnn9C36L
-        jojfAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAd4AAABZCAYAAACQXEUXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADFSURBVHhe7cNBDQAwCASw+TfFOQNMLHzapA8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgWpLarar+nh7H4Q+9/dow8QAAAABJRU5E
+        rkJggg==
 </value>
   </data>
   <data name="textBox_userid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>792, 274</value>
+    <value>1188, 422</value>
+  </data>
+  <data name="textBox_userid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="textBox_userid.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 1</value>
+    <value>2, 2</value>
   </data>
   <data name="textBox_userid.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="textBox_userid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 46</value>
+    <value>478, 89</value>
   </data>
   <data name="textBox_userid.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -4102,23 +4142,28 @@ E-mail: info@bcmpkorea.com</value>
   </data>
   <data name="textBox_pass.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAT8AAAAuCAYAAABeWx4hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABYSURBVHhe7cMBDQAwCAOw+zfFnAE2HtqkDwAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+lqR2q96ZHnn9C36L
-        jojfAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAd4AAABZCAYAAACQXEUXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAADFSURBVHhe7cNBDQAwCASw+TfFOQNMLHzapA8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgWpLarar+nh7H4Q+9/dow8QAAAABJRU5E
+        rkJggg==
 </value>
   </data>
   <data name="textBox_pass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>792, 340</value>
+    <value>1188, 523</value>
+  </data>
+  <data name="textBox_pass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="textBox_pass.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1, 1</value>
+    <value>2, 2</value>
   </data>
   <data name="textBox_pass.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="textBox_pass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>319, 46</value>
+    <value>478, 89</value>
   </data>
   <data name="textBox_pass.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -4142,10 +4187,13 @@ E-mail: info@bcmpkorea.com</value>
     <value>NoControl</value>
   </data>
   <data name="pro_namepro2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>889, 83</value>
+    <value>1334, 128</value>
+  </data>
+  <data name="pro_namepro2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="pro_namepro2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 97</value>
+    <value>322, 149</value>
   </data>
   <data name="pro_namepro2.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -4172,13 +4220,13 @@ E-mail: info@bcmpkorea.com</value>
     <value>NoControl</value>
   </data>
   <data name="pro_namepro1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>818, 79</value>
+    <value>1227, 122</value>
   </data>
   <data name="pro_namepro1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="pro_namepro1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 100</value>
+    <value>76, 154</value>
   </data>
   <data name="pro_namepro1.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -4208,13 +4256,13 @@ E-mail: info@bcmpkorea.com</value>
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>871, 81</value>
+    <value>1306, 125</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 68</value>
+    <value>60, 105</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -4239,32 +4287,40 @@ E-mail: info@bcmpkorea.com</value>
   </data>
   <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAASwAAAAECAYAAAA09QKaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMjSURBVFhH7dXVSiUAGEXhebR5HRERERERUREREbG7u7uO
-        3d2tx+7uzjN7Nszg/i8GZmDuzsX3Cmt9c7lc3z8+PkK+ent7Ey8vL+Lp6Uk8PDyIu7s7cXNzI66ursTF
-        xYU4OzsTJycn4ujoSBwcHIi9vT2xs7Mjtra2xMbGhlhbWxOrq6tieXlZLC4uivn5eTE7Oyump6fF5OSk
-        GB8fF6Ojo2J4eFgMDg6K/v5+0dvbK7q7u0VnZ6dob28Xra2toqWlRTQ1NYmGhgZRV1cnampqRFVVlaio
-        qBBlZWWipKREFBUViYKCApGXlydycnJEVlaWyMjIEGlpaSIlJUUkJSWJhIQEERcXJ2JiYkR0dLSIiooS
-        kZGRIiIiQoSHh4uwsDARGhoqgoODRVBQkAgMDBQBAQHC399f+Pn5CV9fX+Hj4yO8vb2Fl5eX8PT0FB4e
-        Hr/9DFYIuD4/PwXCJd7f3wVCJl5fXwXCJp6fnwVCJx4fHwXCJ+7v7wVCKG5vbwXCKK6vrwVCKS4vLwXC
-        Kc7PzwkBpdPTU0JA6fj4mBBQOjw8JASU9vf3CQGl3d1dQkBpe3ubEFDa3NwkBJTW19cJASWn00kIKK2s
-        rBACSktLS4SA0sLCAiGgNDc3RwgozczMEAJKU1NThIDSxMQEIaA0NjZGCCiNjIwQAkpDQ0OEgNLAwAAh
-        oNTX10cIKPX09BACSl1dXYSAUkdHByGg1NbWRggoORwOQkCpubmZEFBqbGwkBJTq6+sJAaXa2lpCQKm6
-        upoQUKqsrCQElMrLywkBpdLSUkJAqbi4mBBQKiwsJASU8vPzCQEVubm5AkEV2dnZAoEVmZmZAsEV6enp
-        AgEWqampAkEWycnJAoEWiYmJAsEW8fHxAgEXsbGxAkEX7mD9ZbC+RsvGy0bMxsxGzcbNRs7GzkbPxs9G
-        0MbQRtHG0UbSxtJG08bTRtTG1EbVxtVG1sbWRtfG10bYxthG2cbZRtrG2kbbxttG3MbcRv2rX4G3obfB
-        t+G3A7AjsEOwY7CDsKOww7DjsAOxI7FDsWOxg7GjscNxB+sfguXm9r+4Z/inGTpdPwCqEIFUWKdfswAA
-        AABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAcIAAAAGCAYAAABQFp5TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARySURBVGhD7dbnTtB3GMXxXlpvxxBDDCGEEIIM2ciUDbI3
+        iLKRpSAbRPZWhoDsKUOEPr8mPT0l502b+KLJ/ySfa/ie3+7v7383T3/+/Cn9+PFDur6+li4vL6WLiwvp
+        7OxMOjk5kY6OjqSDgwNpb29P+vbtm7S9vS19/fpV2tjYkNbW1qTPnz9LKysr0tLSkrSwsCDNzc1JMzMz
+        0tTUlPTp0yfp48eP0tjYmDQyMiINDQ1JAwMD0ocPH6Te3l7p3bt3Und3t9TZ2Sm9fftWamtrk1paWqSm
+        piapoaFBev36tfTq1SuptrZWqq6uliorK6Xy8nKptLRUKi4ulgoLC6WXL19KeXl5Uk5OjpSVlSVlZGRI
+        L168kFJTU6Xk5GQpMTFRSkhIkOLi4qSYmBgpKipKevbsmRQeHi6FhoZKISEhUnBwsBQUFCQFBgZKAQEB
+        kr+/v+Tn5yc9efJE8vX1lR4/fiz5+PhIjx49+gcXwqfmz93d3UkWROn29layUEo3NzeSBVS6urqSLKzS
+        9+/fJQuudH5+LlmIpdPTU7Aow/HxMViU4fDwECzKsL+/DxZl2N3dBYsy7OzsgEUZtra2wKIMm5ubYFGG
+        9fV1sCjDly9fwKIMq6urYFGG5eVlsCjD4uIiWJRhfn4eLMowOzsLFmWYnp4GizJMTk6CRRkmJibAogzj
+        4+NgUYbR0VGwKMPw8DBYlGFwcBAsytDf3w8WZejr6wOLMrx//x4sytDT0wMWZejq6gKLMnR0dIBFGdrb
+        28GiDK2trWBRhubmZrAoQ2NjI1iU4c2bN2BRhvr6erAoQ11dHViUoaamBizKUFVVBRZlqKioAIsylJWV
+        gUUZSkpKwKIMRUVFYFGGgoICsChDfn4+WJQhNzcXLMqQnZ0NFmXIzMwEizKkp6eDRRnS0tLAogwpKSlg
+        UYakpCSwKMPz588lC7QUHx8vWbil2NhYyYIuRUdHSxZ6KTIyUrIDIEVEREh2DKSwsDDwQiioCDocQhVE
+        xnFkHErG0WQcUMYxZRxWxpFlHFzG8WUcYsZR9uLsxflXxvlhoBnHmnG4GUeccdAZx51x6BlHn/EBYHwG
+        GB8DxieB8WF4iA8E4zPB+FgwPhmMDwfj88H4iDA+JYwPCuOzwvi4MD4xXggFFUHHC+F/DyHjKDIOJONY
+        Mg4n44gyDirjuDIOLePoMg4w4xgzDjPjSDMONuN4Mw4546gzDjzj2DMOP+MTwPgQMD4HjI/CQ3wcGJ8I
+        xoeC8blgfDQYnw7GB4TxGWF8TBifFMaHhfF5YXxkHuJjw/jkMD48jM8P4yPE+BQxPkiMzxLj48T4RDE+
+        VIyPlRdCQUXQ8UL470Lo8fwq6mA56mA56mA56mA56mA56mA56mA56mA56mA56mA56mA56mA56mD9RZ0s
+        R50sR50sR50sR50sR50sR50sR50sR50sR50sR50sh4+VF0JBRdBRIfR4PJ7/E3XcHXXcHXXcHXXcHXXc
+        HXXcHXXcHXXcHXXcHXXcHXXcnb+P1db9H0rPuFjLGKgbAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="bunifuGradientPanel1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
   <data name="bunifuGradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>804, 170</value>
+    <value>1206, 262</value>
+  </data>
+  <data name="bunifuGradientPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="bunifuGradientPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 4</value>
+    <value>450, 6</value>
   </data>
   <data name="bunifuGradientPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -4285,13 +4341,16 @@ E-mail: info@bcmpkorea.com</value>
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1184, 681</value>
+    <value>1776, 1048</value>
   </data>
   <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
     <value>57, 83</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

@@ -22,6 +22,7 @@ namespace CNPM_ver3
 
         public ManageJoinedProjectForm()
         {
+            Users.PK = "00682";
             InitializeComponent();
         }
 

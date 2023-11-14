@@ -18,6 +18,32 @@ namespace CNPM_ver3
 {
     public partial class PageControl : Form
     {
+
+
+
+        /*private Size oldSize;
+
+        protected override void OnResize(System.EventArgs e)
+        {
+            base.OnResize(e);
+
+            foreach (Control cnt in this.Controls)
+                ResizeAll(cnt, base.Size);
+
+            oldSize = base.Size;
+        }
+        private void ResizeAll(Control control, Size newSize)
+        {
+            int width = newSize.Width - oldSize.Width;
+            control.Left += (control.Left * width) / oldSize.Width;
+            control.Width += (control.Width * width) / oldSize.Width;
+
+            int height = newSize.Height - oldSize.Height;
+            control.Top += (control.Top * height) / oldSize.Height;
+            control.Height += (control.Height * height) / oldSize.Height;
+        }*/
+
+            
         //PM 
         int control_hover = -1;
         int flag = 0;
@@ -36,6 +62,12 @@ namespace CNPM_ver3
 
         private void PageControl_Load(object sender, EventArgs e)
         {
+
+            //oldSize = base.Size;
+            int h = Screen.PrimaryScreen.WorkingArea.Height;
+            int w = Screen.PrimaryScreen.WorkingArea.Width;
+            this.ClientSize = new Size(w, h);
+
             //FE
             MP_button_allTask.FlatAppearance.MouseOverBackColor = Color.FromArgb(240, 246, 255);
             MP_button_allTask.FlatAppearance.MouseDownBackColor = Color.FromArgb(240, 246, 255);

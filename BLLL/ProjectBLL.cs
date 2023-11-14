@@ -99,5 +99,14 @@ namespace BLLL
             return pj_access.getProjectOfUser(pk);
         }
 
+        public DataTable GetAllProject()
+        {
+            return pj_access.GetAllProject();
+        }
+
+        public DataTable GetTaskPerUser(String pjID)
+        {
+            return pj_access.GetTaskPerUser(pjID);
+        }
     }
 }

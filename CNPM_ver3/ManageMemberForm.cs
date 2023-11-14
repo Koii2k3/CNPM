@@ -269,12 +269,6 @@ namespace CNPM_ver3
             loadTableSearch(description);
         }
 
-
-
-
-
-
-
         public void loadTableSearch(string description)
         {
             TypeBLL tl = new TypeBLL();
