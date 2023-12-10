@@ -1,0 +1,410 @@
+D:\WinForm1\DALL\bin\Debug\DALL.dll.config
+D:\WinForm1\DALL\bin\Debug\DALL.dll
+D:\WinForm1\DALL\bin\Debug\DALL.pdb
+D:\WinForm1\DALL\bin\Debug\BouncyCastle.Crypto.dll
+D:\WinForm1\DALL\bin\Debug\DTOO.dll
+D:\WinForm1\DALL\bin\Debug\Google.Protobuf.dll
+D:\WinForm1\DALL\bin\Debug\K4os.Compression.LZ4.dll
+D:\WinForm1\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\WinForm1\DALL\bin\Debug\K4os.Hash.xxHash.dll
+D:\WinForm1\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\WinForm1\DALL\bin\Debug\MySql.Data.dll
+D:\WinForm1\DALL\bin\Debug\System.Buffers.dll
+D:\WinForm1\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\WinForm1\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\WinForm1\DALL\bin\Debug\System.IO.Pipelines.dll
+D:\WinForm1\DALL\bin\Debug\System.Memory.dll
+D:\WinForm1\DALL\bin\Debug\System.Numerics.Vectors.dll
+D:\WinForm1\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\WinForm1\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\WinForm1\DALL\bin\Debug\ZstdSharp.dll
+D:\WinForm1\DALL\bin\Debug\DTOO.pdb
+D:\WinForm1\DALL\bin\Debug\BouncyCastle.Crypto.xml
+D:\WinForm1\DALL\bin\Debug\Google.Protobuf.pdb
+D:\WinForm1\DALL\bin\Debug\Google.Protobuf.xml
+D:\WinForm1\DALL\bin\Debug\K4os.Compression.LZ4.xml
+D:\WinForm1\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\WinForm1\DALL\bin\Debug\K4os.Hash.xxHash.xml
+D:\WinForm1\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\WinForm1\DALL\bin\Debug\MySql.Data.xml
+D:\WinForm1\DALL\bin\Debug\System.Buffers.xml
+D:\WinForm1\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\WinForm1\DALL\bin\Debug\System.IO.Pipelines.xml
+D:\WinForm1\DALL\bin\Debug\System.Memory.xml
+D:\WinForm1\DALL\bin\Debug\System.Numerics.Vectors.xml
+D:\WinForm1\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\WinForm1\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\WinForm1\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\WinForm1\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\WinForm1\DALL\obj\Debug\DAL.csproj.CopyComplete
+D:\WinForm1\DALL\obj\Debug\DALL.dll
+D:\WinForm1\DALL\obj\Debug\DALL.pdb
+D:\WinForm1\CNPM\DALL\bin\Debug\DALL.dll.config
+D:\WinForm1\CNPM\DALL\bin\Debug\DALL.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\DALL.pdb
+D:\WinForm1\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\DTOO.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\Google.Protobuf.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\MySql.Data.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Buffers.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\System.IO.Pipelines.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Memory.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Numerics.Vectors.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\ZstdSharp.dll
+D:\WinForm1\CNPM\DALL\bin\Debug\DTOO.pdb
+D:\WinForm1\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\Google.Protobuf.pdb
+D:\WinForm1\CNPM\DALL\bin\Debug\Google.Protobuf.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\MySql.Data.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Buffers.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\System.IO.Pipelines.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Memory.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Numerics.Vectors.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\WinForm1\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\WinForm1\CNPM\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\WinForm1\CNPM\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\WinForm1\CNPM\DALL\obj\Debug\DAL.csproj.CopyComplete
+D:\WinForm1\CNPM\DALL\obj\Debug\DALL.dll
+D:\WinForm1\CNPM\DALL\obj\Debug\DALL.pdb
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\DALL.dll.config
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\DALL.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\DALL.pdb
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\DTOO.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\Google.Protobuf.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\MySql.Data.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Buffers.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.IO.Pipelines.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Memory.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\ZstdSharp.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\DTOO.pdb
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\Google.Protobuf.pdb
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\Google.Protobuf.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\MySql.Data.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Buffers.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.IO.Pipelines.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Memory.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\obj\Debug\DALL.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\CNPM_ver3\DALL\obj\Debug\DALL.pdb
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\DALL.dll.config
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\DALL.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\DALL.pdb
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\DTOO.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\Google.Protobuf.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\MySql.Data.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Memory.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\ZstdSharp.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\DTOO.pdb
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\Google.Protobuf.pdb
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\Google.Protobuf.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\MySql.Data.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Memory.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\obj\Debug\DALL.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\DALL\obj\Debug\DALL.pdb
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\DALL.dll.config
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\DALL.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\DALL.pdb
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\DTOO.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\Google.Protobuf.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\MySql.Data.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Memory.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\ZstdSharp.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\DTOO.pdb
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\Google.Protobuf.pdb
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\Google.Protobuf.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\MySql.Data.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Memory.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\obj\Debug\DALL.dll
+C:\Users\Admin\Downloads\Compressed\CNPM_ver3-master\CNPM_ver3\DALL\obj\Debug\DALL.pdb
+D:\WinForm\CNPM\DALL\bin\Debug\DALL.dll.config
+D:\WinForm\CNPM\DALL\bin\Debug\DALL.dll
+D:\WinForm\CNPM\DALL\bin\Debug\DALL.pdb
+D:\WinForm\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.dll
+D:\WinForm\CNPM\DALL\bin\Debug\DTOO.dll
+D:\WinForm\CNPM\DALL\bin\Debug\Google.Protobuf.dll
+D:\WinForm\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.dll
+D:\WinForm\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\WinForm\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.dll
+D:\WinForm\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\WinForm\CNPM\DALL\bin\Debug\MySql.Data.dll
+D:\WinForm\CNPM\DALL\bin\Debug\System.Buffers.dll
+D:\WinForm\CNPM\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\WinForm\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\WinForm\CNPM\DALL\bin\Debug\System.IO.Pipelines.dll
+D:\WinForm\CNPM\DALL\bin\Debug\System.Memory.dll
+D:\WinForm\CNPM\DALL\bin\Debug\System.Numerics.Vectors.dll
+D:\WinForm\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\WinForm\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\WinForm\CNPM\DALL\bin\Debug\ZstdSharp.dll
+D:\WinForm\CNPM\DALL\bin\Debug\DTOO.pdb
+D:\WinForm\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.xml
+D:\WinForm\CNPM\DALL\bin\Debug\Google.Protobuf.pdb
+D:\WinForm\CNPM\DALL\bin\Debug\Google.Protobuf.xml
+D:\WinForm\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.xml
+D:\WinForm\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\WinForm\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.xml
+D:\WinForm\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\WinForm\CNPM\DALL\bin\Debug\MySql.Data.xml
+D:\WinForm\CNPM\DALL\bin\Debug\System.Buffers.xml
+D:\WinForm\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\WinForm\CNPM\DALL\bin\Debug\System.IO.Pipelines.xml
+D:\WinForm\CNPM\DALL\bin\Debug\System.Memory.xml
+D:\WinForm\CNPM\DALL\bin\Debug\System.Numerics.Vectors.xml
+D:\WinForm\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\WinForm\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\WinForm\CNPM\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\WinForm\CNPM\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\WinForm\CNPM\DALL\obj\Debug\DAL.csproj.CopyComplete
+D:\WinForm\CNPM\DALL\obj\Debug\DALL.dll
+D:\WinForm\CNPM\DALL\obj\Debug\DALL.pdb
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\DALL.dll.config
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\DALL.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\DALL.pdb
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\DTOO.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\Google.Protobuf.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\MySql.Data.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Buffers.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.IO.Pipelines.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Memory.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\ZstdSharp.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\DTOO.pdb
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\Google.Protobuf.pdb
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\Google.Protobuf.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\MySql.Data.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Buffers.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.IO.Pipelines.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Memory.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\obj\Debug\DALL.dll
+C:\Users\admin\Documents\Study\TDTU\Current\Software\BMCP\Koiii\CNPM\DALL\obj\Debug\DALL.pdb
+D:\CNPM\DALL\bin\Debug\DALL.dll.config
+D:\CNPM\DALL\bin\Debug\DALL.dll
+D:\CNPM\DALL\bin\Debug\DALL.pdb
+D:\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.dll
+D:\CNPM\DALL\bin\Debug\DTOO.dll
+D:\CNPM\DALL\bin\Debug\Google.Protobuf.dll
+D:\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.dll
+D:\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.dll
+D:\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CNPM\DALL\bin\Debug\MySql.Data.dll
+D:\CNPM\DALL\bin\Debug\System.Buffers.dll
+D:\CNPM\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\CNPM\DALL\bin\Debug\System.IO.Pipelines.dll
+D:\CNPM\DALL\bin\Debug\System.Memory.dll
+D:\CNPM\DALL\bin\Debug\System.Numerics.Vectors.dll
+D:\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\CNPM\DALL\bin\Debug\ZstdSharp.dll
+D:\CNPM\DALL\bin\Debug\DTOO.pdb
+D:\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.xml
+D:\CNPM\DALL\bin\Debug\Google.Protobuf.pdb
+D:\CNPM\DALL\bin\Debug\Google.Protobuf.xml
+D:\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.xml
+D:\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.xml
+D:\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\CNPM\DALL\bin\Debug\MySql.Data.xml
+D:\CNPM\DALL\bin\Debug\System.Buffers.xml
+D:\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\CNPM\DALL\bin\Debug\System.IO.Pipelines.xml
+D:\CNPM\DALL\bin\Debug\System.Memory.xml
+D:\CNPM\DALL\bin\Debug\System.Numerics.Vectors.xml
+D:\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\CNPM\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\CNPM\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\CNPM\DALL\obj\Debug\DAL.csproj.CopyComplete
+D:\CNPM\DALL\obj\Debug\DALL.dll
+D:\CNPM\DALL\obj\Debug\DALL.pdb
+D:\WinForm\final\CNPM\DALL\bin\Debug\DALL.dll.config
+D:\WinForm\final\CNPM\DALL\bin\Debug\DALL.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\DALL.pdb
+D:\WinForm\final\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\DTOO.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\Google.Protobuf.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\MySql.Data.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Buffers.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.IO.Pipelines.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Memory.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Numerics.Vectors.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\ZstdSharp.dll
+D:\WinForm\final\CNPM\DALL\bin\Debug\DTOO.pdb
+D:\WinForm\final\CNPM\DALL\bin\Debug\BouncyCastle.Crypto.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\Google.Protobuf.pdb
+D:\WinForm\final\CNPM\DALL\bin\Debug\Google.Protobuf.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\K4os.Hash.xxHash.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\MySql.Data.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Buffers.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.IO.Pipelines.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Memory.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Numerics.Vectors.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\WinForm\final\CNPM\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\WinForm\final\CNPM\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\WinForm\final\CNPM\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\WinForm\final\CNPM\DALL\obj\Debug\DAL.csproj.CopyComplete
+D:\WinForm\final\CNPM\DALL\obj\Debug\DALL.dll
+D:\WinForm\final\CNPM\DALL\obj\Debug\DALL.pdb
+D:\CNPM - Copy\DALL\bin\Debug\DALL.dll.config
+D:\CNPM - Copy\DALL\bin\Debug\DALL.dll
+D:\CNPM - Copy\DALL\bin\Debug\DALL.pdb
+D:\CNPM - Copy\DALL\bin\Debug\BouncyCastle.Crypto.dll
+D:\CNPM - Copy\DALL\bin\Debug\DTOO.dll
+D:\CNPM - Copy\DALL\bin\Debug\Google.Protobuf.dll
+D:\CNPM - Copy\DALL\bin\Debug\K4os.Compression.LZ4.dll
+D:\CNPM - Copy\DALL\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\CNPM - Copy\DALL\bin\Debug\K4os.Hash.xxHash.dll
+D:\CNPM - Copy\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CNPM - Copy\DALL\bin\Debug\MySql.Data.dll
+D:\CNPM - Copy\DALL\bin\Debug\System.Buffers.dll
+D:\CNPM - Copy\DALL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\CNPM - Copy\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\CNPM - Copy\DALL\bin\Debug\System.IO.Pipelines.dll
+D:\CNPM - Copy\DALL\bin\Debug\System.Memory.dll
+D:\CNPM - Copy\DALL\bin\Debug\System.Numerics.Vectors.dll
+D:\CNPM - Copy\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\CNPM - Copy\DALL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\CNPM - Copy\DALL\bin\Debug\ZstdSharp.dll
+D:\CNPM - Copy\DALL\bin\Debug\DTOO.pdb
+D:\CNPM - Copy\DALL\bin\Debug\BouncyCastle.Crypto.xml
+D:\CNPM - Copy\DALL\bin\Debug\Google.Protobuf.pdb
+D:\CNPM - Copy\DALL\bin\Debug\Google.Protobuf.xml
+D:\CNPM - Copy\DALL\bin\Debug\K4os.Compression.LZ4.xml
+D:\CNPM - Copy\DALL\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\CNPM - Copy\DALL\bin\Debug\K4os.Hash.xxHash.xml
+D:\CNPM - Copy\DALL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\CNPM - Copy\DALL\bin\Debug\MySql.Data.xml
+D:\CNPM - Copy\DALL\bin\Debug\System.Buffers.xml
+D:\CNPM - Copy\DALL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\CNPM - Copy\DALL\bin\Debug\System.IO.Pipelines.xml
+D:\CNPM - Copy\DALL\bin\Debug\System.Memory.xml
+D:\CNPM - Copy\DALL\bin\Debug\System.Numerics.Vectors.xml
+D:\CNPM - Copy\DALL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\CNPM - Copy\DALL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\CNPM - Copy\DALL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\CNPM - Copy\DALL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\CNPM - Copy\DALL\obj\Debug\DAL.csproj.CopyComplete
+D:\CNPM - Copy\DALL\obj\Debug\DALL.dll
+D:\CNPM - Copy\DALL\obj\Debug\DALL.pdb
